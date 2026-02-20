@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-      {/* Ambient glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-4xl w-full relative z-10">
@@ -14,7 +13,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6">
-            Software Engineer
+            Talent & Recruiting Leader
           </p>
         </motion.div>
 
@@ -24,9 +23,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
         >
-          Alex
+          Data, AI
           <br />
-          <span className="text-gradient">Morgan</span>
+          <span className="text-gradient">& Research</span>
         </motion.h1>
 
         <motion.p
@@ -35,8 +34,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="text-muted-foreground text-lg sm:text-xl max-w-lg leading-relaxed mb-10"
         >
-          Building thoughtful digital experiences with clean code and sharp design.
-          5+ years crafting products that people love to use.
+          9+ years connecting world-class talent with the companies shaping the future — from Ritz-Carlton to Riviera Partners, scaling teams at unicorns and placing 55+ leaders.
         </motion.p>
 
         <motion.div
@@ -46,7 +44,6 @@ const HeroSection = () => {
           className="flex items-center gap-5"
         >
           {[
-            { icon: Github, href: "#", label: "GitHub" },
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: Mail, href: "#", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
