@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
 const skills = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 80 },
-  { name: "UI / UX Design", level: 75 },
-  { name: "PostgreSQL", level: 70 },
-  { name: "DevOps / CI/CD", level: 65 },
+  { name: "Executive & Technical Recruiting", level: 95 },
+  { name: "AI/ML Talent Strategy", level: 92 },
+  { name: "Team Building & Scaling", level: 90 },
+  { name: "Stakeholder Management", level: 88 },
+  { name: "Coaching & Training", level: 85 },
+  { name: "Operations & Process Design", level: 80 },
 ];
 
 const SkillBar = ({ name, level }: { name: string; level: number }) => (
@@ -34,7 +34,7 @@ const SkillsSection = () => (
       Skills
     </p>
     <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-      What I work with
+      Core competencies
     </h2>
     <div className="section-divider mb-14" />
 

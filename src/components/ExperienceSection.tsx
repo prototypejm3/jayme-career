@@ -5,30 +5,78 @@ import AnimatedSection from "./AnimatedSection";
 const experiences = [
   {
     id: 1,
-    role: "Senior Frontend Engineer",
-    company: "TechCorp",
-    period: "2022 — Present",
-    description:
-      "Led the redesign of the core platform serving 2M+ users. Built a component library from scratch, improved performance by 40%, and mentored a team of 4 engineers.",
-    tech: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    role: "Director",
+    company: "Riviera Partners",
+    period: "Aug 2025 — Present",
+    location: "New York City Metropolitan Area",
+    description: "All things Data, AI & Research. Sometimes ~ Eng & Product.",
+    previousRole: {
+      title: "Growth Lead – AI Practice",
+      period: "Jan 2025 — Aug 2025",
+      location: "New York, US · Hybrid",
+      description: "Search Excellence, Sales Efficiency and Market Awareness.",
+    },
+    tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 — 2022",
+    role: "Talent Acquisition Consultant",
+    company: "Wellfound",
+    period: "Oct 2023 — Feb 2025",
+    location: "Part-time",
     description:
-      "Shipped 12 features end-to-end as the third engineering hire. Built real-time dashboards, payment integrations, and an internal admin tool used daily by the ops team.",
-    tech: ["Node.js", "React", "PostgreSQL", "AWS"],
+      "Worked side-by-side with the CEO, CTO, and Head of Ops to shape how the company approached recruiting and to build stronger hiring habits. Tested and gave feedback on their AI sourcing tools, helping the team make them easier and more effective to use. Spent time directly with the Customer Success team, coaching them 1:1 and helping them level up their recruiting skills.",
+    tech: ["AI Sourcing Tools", "Coaching", "Strategy"],
   },
   {
     id: 3,
-    role: "Frontend Developer",
-    company: "DesignStudio",
-    period: "2019 — 2020",
+    role: "Director of Recruiting",
+    company: "Quantum",
+    period: "Jan 2024 — Jan 2025",
+    location: "New York City Metropolitan Area",
     description:
-      "Translated pixel-perfect designs into responsive web apps for agency clients. Focused on animation, accessibility, and cross-browser compatibility.",
-    tech: ["JavaScript", "Vue.js", "SCSS", "GSAP"],
+      "Founding Eng, Staff, Principal & Executive AI/ML Talent. Clients include: Character AI, Luma AI, Together AI, Scale AI, Orby, Tavus, Hume, Foundry, Hebbia, Chroma, Rippling, ClickUp, Verkada, Applied Intuition, dYdX, Yuga Labs, Magic Eden, Aptos, Moonpay, Gemini, and more.",
+    tech: ["AI/ML Talent", "Executive Recruiting", "Crypto/Web3"],
+  },
+  {
+    id: 4,
+    role: "Tech Recruiting & Operations",
+    company: "Genies",
+    period: "Jun 2021 — Feb 2024",
+    location: "LA, SF",
+    description:
+      "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
+    tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
+  },
+  {
+    id: 5,
+    role: "Principal – Executive Recruiter",
+    company: "True",
+    period: "Sep 2018 — Aug 2021",
+    location: "New York, Europe",
+    description:
+      "Promoted to Principal 2020. Placed 55 leaders across public and VC-backed organizations. Notable clients: Weight Watchers, FanDuel, Spotify, Wish, Etsy, Genies, Blizzard, Amex, Moda Operandi, Tamara Mellon, Goop, Rent the Runway, Daily Harvest, KOHO, Betterment → Sequoia, NEA, A16Z, Lightspeed, Accel. Part of the DEI committee & ambassador for AboveBoard.",
+    tech: ["Executive Search", "DEI", "VC-Backed"],
+  },
+  {
+    id: 6,
+    role: "Senior Account Manager (Apple Siri)",
+    company: "Advantis Global",
+    period: "Dec 2016 — Sep 2018",
+    location: "San Francisco Bay Area",
+    description:
+      "Supported AI/ML and iOS hiring across junior to manager levels for Apple's Siri team. As Director of Recruiting for Frontier Tech, established all KPIs & SOPs, created a recruitment training guide from scratch. Launched a new program with 12 direct reports, increasing company metrics by 60%. President's Club x2. Notable clients: Apple, Cisco, Tesla, Adobe, Facebook, Dropbox, Mercedes Benz, Sephora.",
+    tech: ["AI/ML", "iOS", "President's Club x2"],
+  },
+  {
+    id: 7,
+    role: "Talent Advisor & Tech Recruiter",
+    company: "Vega Partners / AppBuddy",
+    period: "Jan 2016 — Aug 2018",
+    location: "",
+    description:
+      "Provided guidance pertaining to strategic technology hires within Fintech & IoT/AI start-ups. Helped create and integrate internal learning, development & training. Established best practices. Made a lot of phone calls and even more friends :)",
+    tech: ["Fintech", "IoT/AI", "Training"],
   },
 ];
 
@@ -61,9 +109,16 @@ const ExperienceSection = () => {
                   <h3 className="font-display font-semibold text-lg">{exp.role}</h3>
                   <p className="text-primary text-sm">{exp.company}</p>
                 </div>
-                <span className="text-muted-foreground text-sm font-body shrink-0">
-                  {exp.period}
-                </span>
+                <div className="text-right shrink-0">
+                  <span className="text-muted-foreground text-sm font-body block">
+                    {exp.period}
+                  </span>
+                  {exp.location && (
+                    <span className="text-muted-foreground/60 text-xs font-body">
+                      {exp.location}
+                    </span>
+                  )}
+                </div>
               </div>
 
               <AnimatePresence>
@@ -79,6 +134,13 @@ const ExperienceSection = () => {
                       <p className="text-secondary-foreground leading-relaxed mb-4">
                         {exp.description}
                       </p>
+                      {exp.previousRole && (
+                        <div className="mb-4 pl-4 border-l-2 border-primary/20">
+                          <p className="font-display text-sm font-medium">{exp.previousRole.title}</p>
+                          <p className="text-muted-foreground text-xs mb-1">{exp.previousRole.period} · {exp.previousRole.location}</p>
+                          <p className="text-secondary-foreground text-sm">{exp.previousRole.description}</p>
+                        </div>
+                      )}
                       <div className="flex flex-wrap gap-2">
                         {exp.tech.map((t) => (
                           <span
