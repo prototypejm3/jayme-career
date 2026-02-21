@@ -32,6 +32,7 @@ const experiences = [
       description: "Search Excellence, Sales Efficiency and Market Awareness.",
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -43,6 +44,7 @@ const experiences = [
     description:
       "Worked side-by-side with the CEO, CTO, and Head of Ops to shape how the company approached recruiting and to build stronger hiring habits. Tested and gave feedback on their AI sourcing tools, helping the team make them easier and more effective to use. Spent time directly with the Customer Success team, coaching them 1:1 and helping them level up their recruiting skills.",
     tech: ["AI Sourcing Tools", "Coaching", "Strategy"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -54,6 +56,7 @@ const experiences = [
     description:
       "Founding Eng, Staff, Principal & Executive AI/ML Talent. Clients include: Character AI, Luma AI, Together AI, Scale AI, Orby, Tavus, Hume, Foundry, Hebbia, Chroma, Rippling, ClickUp, Verkada, Applied Intuition, dYdX, Yuga Labs, Magic Eden, Aptos, Moonpay, Gemini, and more.",
     tech: ["AI/ML Talent", "Executive Recruiting", "Crypto/Web3"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -65,6 +68,7 @@ const experiences = [
     description:
       "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
     tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
+    stakeholders: [] as string[],
     reviews: [
       {
         reviewer: "Matthew Skiba",
@@ -95,6 +99,7 @@ const experiences = [
     description:
       "Promoted to Principal 2020. Placed 55 leaders across public and VC-backed organizations. Notable clients: Weight Watchers, FanDuel, Spotify, Wish, Etsy, Genies, Blizzard, Amex, Moda Operandi, Tamara Mellon, Goop, Rent the Runway, Daily Harvest, KOHO, Betterment → Sequoia, NEA, A16Z, Lightspeed, Accel. Part of the DEI committee & ambassador for AboveBoard.",
     tech: ["Executive Search", "DEI", "VC-Backed"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -106,6 +111,7 @@ const experiences = [
     description:
       "Supported AI/ML and iOS hiring across junior to manager levels for Apple's Siri team. As Director of Recruiting for Frontier Tech, established all KPIs & SOPs, created a recruitment training guide from scratch. Launched a new program with 12 direct reports, increasing company metrics by 60%. President's Club x2. Notable clients: Apple, Cisco, Tesla, Adobe, Facebook, Dropbox, Mercedes Benz, Sephora.",
     tech: ["AI/ML", "iOS", "President's Club x2"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -117,6 +123,7 @@ const experiences = [
     description:
       "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
     tech: ["Revenue Growth", "Vendor Relations", "Condé Nast Rated"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
   {
@@ -128,6 +135,7 @@ const experiences = [
     description:
       "As the youngest person elected for this position: Assisted in Strategic Planning for 2014–2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
     tech: ["Forbes 5-Star", "AAA 5-Diamond", "Gallup #2"],
+    stakeholders: [] as string[],
     reviews: [] as ReviewNote[],
   },
 ];
@@ -203,6 +211,21 @@ const ExperienceSection = () => {
                           </span>
                         ))}
                       </div>
+
+                      {exp.stakeholders.length > 0 && (
+                        <div className="mt-4 pt-4 border-t border-border/50">
+                          <p className="text-primary font-display text-[10px] tracking-[0.2em] uppercase mb-2">
+                            Close Stakeholders
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {exp.stakeholders.map((name) => (
+                              <span key={name} className="text-xs font-body text-muted-foreground bg-muted px-2.5 py-1 rounded-full">
+                                {name}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
 
                       {exp.reviews.length > 0 && (
                         <div className="mt-6 pt-6 border-t border-border">
