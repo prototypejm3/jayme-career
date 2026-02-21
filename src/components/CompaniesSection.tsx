@@ -81,10 +81,10 @@ const CompaniesSection = () => (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3 text-foreground">
-          Companies I've Built
+          Side Projects
         </h2>
         <p className="text-muted-foreground text-base font-body">
-          I don't just hire for companies. I build them.
+          Things I've built on evenings and weekends.
         </p>
       </div>
 
@@ -138,7 +138,7 @@ const CompaniesSection = () => (
       </div>
 
       <p className="text-center text-muted-foreground text-sm font-body mt-16 max-w-2xl mx-auto italic">
-        Across every build — talent, product, or brand — I focus on systems, clarity, and narrative.
+        Across every project — talent, product, or brand — I focus on systems, clarity, and narrative.
       </p>
     </div>
   </section>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, Github } from "lucide-react";
 import jaymePhoto from "@/assets/jayme-photo.png";
 
 const HeroSection = () => {
@@ -39,9 +39,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center gap-5"
         >
-          {[
-            { icon: Linkedin, href: "https://www.linkedin.com/feed/", label: "LinkedIn" },
-            { icon: Mail, href: "mailto:Jaymel.karr@gmail.com", label: "Email" },
+            {[
+              { icon: Linkedin, href: "https://www.linkedin.com/feed/", label: "LinkedIn" },
+              { icon: Github, href: "https://github.com/prototypejm3/prototypejm3", label: "GitHub" },
+              { icon: Mail, href: "mailto:Jaymel.karr@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
