@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PhilosophySection from "@/components/PhilosophySection";
@@ -8,42 +9,74 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ReferencesSection from "@/components/ReferencesSection";
 import ContactSection from "@/components/ContactSection";
+import { AnimatePresence, motion } from "framer-motion";
+
+const tabs = [
+  { id: "about", label: "About" },
+  { id: "expertise", label: "Expertise" },
+  { id: "projects", label: "Side Projects" },
+  { id: "experience", label: "Experience" },
+  { id: "vouches", label: "Vouches" },
+  { id: "contact", label: "Contact" },
+] as const;
+
+type TabId = (typeof tabs)[number]["id"];
 
 const Index = () => {
+  const [activeTab, setActiveTab] = useState<TabId>("about");
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case "about":
+        return <HeroSection />;
+      case "expertise":
+        return (
+          <div className="overflow-y-auto h-full">
+            <PhilosophySection />
+            <ScalingSection />
+            <TalentArchitectureSection />
+            <SkillsSection />
+          </div>
+        );
+      case "projects":
+        return <CompaniesSection />;
+      case "experience":
+        return (
+          <div className="overflow-y-auto h-full">
+            <ExperienceSection />
+          </div>
+        );
+      case "vouches":
+        return (
+          <div className="overflow-y-auto h-full">
+            <ReferencesSection />
+          </div>
+        );
+      case "contact":
+        return <ContactSection />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <main className="min-h-screen bg-background">
-      <Navbar />
+    <main className="h-screen flex flex-col bg-background overflow-hidden">
+      <Navbar tabs={tabs} activeTab={activeTab} onTabChange={(id) => setActiveTab(id as TabId)} />
 
-      <section id="about">
-        <HeroSection />
-      </section>
-
-      <section id="expertise">
-        <PhilosophySection />
-        <ScalingSection />
-        <TalentArchitectureSection />
-        <SkillsSection />
-      </section>
-
-      <section id="companies">
-        <CompaniesSection />
-      </section>
-
-      <section id="experience">
-        <ExperienceSection />
-      </section>
-
-      <section id="vouches">
-        <ReferencesSection />
-      </section>
-
-      <section id="contact">
-        <ContactSection />
-      </section>
-
-      <footer className="py-8 text-center text-muted-foreground text-sm font-body border-t border-border">
-        © {new Date().getFullYear()} All rights reserved.
-      </footer>
+      <div className="flex-1 overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25 }}
+            className="h-full"
+          >
+            {renderContent()}
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </main>
   );
 };
