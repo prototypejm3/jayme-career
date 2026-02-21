@@ -32,6 +32,7 @@ const experiences = [
       description: "Search Excellence, Sales Efficiency and Market Awareness.",
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
+    highlights: ["Etsy", "Banyan", "Celonis"],
     stakeholders: ["Kyle Langworthy (Manager)", "Matt Skiba", "Bobby Gormsen", "Alix Woodriff", "Corinne Murberry", "Will Potter"],
     reviews: [] as ReviewNote[],
   },
@@ -56,6 +57,7 @@ const experiences = [
     description:
       "Founding Eng, Staff, Principal & Executive AI/ML Talent. Clients include: Character AI, Luma AI, Together AI, Scale AI, Orby, Tavus, Hume, Foundry, Hebbia, Chroma, Rippling, ClickUp, Verkada, Applied Intuition, dYdX, Yuga Labs, Magic Eden, Aptos, Moonpay, Gemini, and more.",
     tech: ["AI/ML Talent", "Executive Recruiting", "Crypto/Web3"],
+    highlights: ["Character AI", "Cable", "Gable", "Cartesia"],
     stakeholders: ["Mike Rooney (Manager)", "Alix Woodriff", "Josh Kohler", "Seth Funahashi", "Nelly Murodova"],
     reviews: [] as ReviewNote[],
   },
@@ -99,6 +101,7 @@ const experiences = [
     description:
       "Promoted to Principal 2020. Placed 55 leaders across public and VC-backed organizations. Notable clients: Weight Watchers, FanDuel, Spotify, Wish, Etsy, Genies, Blizzard, Amex, Moda Operandi, Tamara Mellon, Goop, Rent the Runway, Daily Harvest, KOHO, Betterment → Sequoia, NEA, A16Z, Lightspeed, Accel. Part of the DEI committee & ambassador for AboveBoard.",
     tech: ["Executive Search", "DEI", "VC-Backed"],
+    highlights: ["Spotify", "Weight Watchers", "KOHO", "Wish", "Genies", "FanDuel"],
     stakeholders: ["Thor Bucy", "Jemma Colleta", "John Pomeraz", "Kalli Frampton"],
     reviews: [] as ReviewNote[],
   },
@@ -166,8 +169,13 @@ const ExperienceSection = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between p-5 sm:p-6 gap-2">
                 <div>
-                  <h3 className="font-display font-semibold text-lg">{exp.role}</h3>
+                   <h3 className="font-display font-semibold text-lg">{exp.role}</h3>
                   <p className="text-primary text-sm">{exp.company}</p>
+                  {exp.highlights && exp.highlights.length > 0 && (
+                    <p className="text-muted-foreground text-xs font-body mt-0.5">
+                      {exp.highlights.join(" · ")}
+                    </p>
+                  )}
                 </div>
                 <div className="text-right shrink-0">
                   <span className="text-muted-foreground text-sm font-body block">
