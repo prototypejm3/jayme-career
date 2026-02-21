@@ -30,7 +30,8 @@ const HeroSection = () => {
           <span className="block">Operator with 10+ years of experience building technical and executive teams across AI, product, engineering, and GTM.</span>
           <span className="block">I began my career recruiting NLP engineers for the Siri team at Apple, then joined True Search as an early member of the Executive Search Technology practice, placing 50+ senior executives.</span>
           <span className="block">I later joined Genies (a generative AI and 3D avatar technology company) as an early employee, leading technical recruiting and operations from Series A through Series C. I helped scale the company to ~200 employees and a $1B valuation, building foundational research, engineering, and product teams in close partnership with leadership.</span>
-          <span className="block">Today, at Riviera, I advise early-stage companies on hiring founding technical leaders and designing scalable, high-bar talent systems.</span>
+          <span className="block">Today, at Riviera, I'm a founding member of the AI Practice, partnering with venture-backed and public companies on senior hires across data, AI, and engineering.</span>
+          <span className="block">I advise early-stage companies on hiring founding technical leaders and designing scalable, high-bar talent systems built to last.</span>
           <span className="block">I'm especially energized by how AI and low-code tools are reshaping how we build, operate, and imagine what's possible.</span>
         </motion.p>
 
