@@ -15,7 +15,7 @@ const tabs = [
   { id: "about", label: "Perspective" },
   { id: "expertise", label: "Talent Architecture" },
   { id: "projects", label: "Independent Builds" },
-  { id: "experience", label: "Work" },
+  { id: "experience", label: "Operating History" },
   { id: "vouches", label: "What Others Say" },
   { id: "contact", label: "Start a Conversation" },
 ] as const;
