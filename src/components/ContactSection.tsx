@@ -7,12 +7,10 @@ const ContactSection = () => (
       Contact
     </p>
     <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6">
-      Let's build something
-      <br />
-      <span className="text-gradient">together</span>
+      If you're building something ambitious, let's talk.
     </h2>
-    <p className="text-muted-foreground text-lg max-w-md mx-auto mb-10">
-      Always open to new opportunities and interesting projects. Drop me a line.
+    <p className="text-muted-foreground text-lg max-w-lg mx-auto mb-10">
+      I partner with founders and operators to design talent systems that scale with the business.
     </p>
 
     <a
