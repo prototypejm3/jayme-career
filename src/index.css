@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 40 20% 92%;
+    --background: 40 33% 96%;
+    --foreground: 20 12% 16%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 40 20% 92%;
+    --card: 35 30% 92%;
+    --card-foreground: 20 12% 16%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 40 20% 92%;
+    --popover: 35 30% 92%;
+    --popover-foreground: 20 12% 16%;
 
-    --primary: 38 92% 55%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 14 58% 52%;
+    --primary-foreground: 40 33% 96%;
 
-    --secondary: 220 16% 14%;
-    --secondary-foreground: 40 15% 80%;
+    --secondary: 33 25% 88%;
+    --secondary-foreground: 20 12% 30%;
 
-    --muted: 220 14% 16%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 35 20% 90%;
+    --muted-foreground: 20 8% 45%;
 
-    --accent: 38 92% 55%;
-    --accent-foreground: 220 20% 6%;
+    --accent: 14 58% 52%;
+    --accent-foreground: 40 33% 96%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 40 33% 96%;
 
-    --border: 220 14% 18%;
-    --input: 220 14% 18%;
-    --ring: 38 92% 55%;
+    --border: 33 20% 85%;
+    --input: 33 20% 85%;
+    --ring: 14 58% 52%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 18% 8%;
-    --sidebar-foreground: 40 20% 92%;
-    --sidebar-primary: 38 92% 55%;
-    --sidebar-primary-foreground: 220 20% 6%;
-    --sidebar-accent: 220 16% 14%;
-    --sidebar-accent-foreground: 40 20% 92%;
-    --sidebar-border: 220 14% 18%;
-    --sidebar-ring: 38 92% 55%;
+    --sidebar-background: 35 30% 92%;
+    --sidebar-foreground: 20 12% 16%;
+    --sidebar-primary: 14 58% 52%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 33 25% 88%;
+    --sidebar-accent-foreground: 20 12% 16%;
+    --sidebar-border: 33 20% 85%;
+    --sidebar-ring: 14 58% 52%;
   }
 }
 
@@ -61,17 +61,17 @@
   }
 
   ::selection {
-    background: hsl(38 92% 55% / 0.3);
+    background: hsl(14 58% 52% / 0.2);
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-amber-300;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-400;
   }
 
   .glow {
-    box-shadow: 0 0 40px hsl(38 92% 55% / 0.15);
+    box-shadow: 0 0 40px hsl(14 58% 52% / 0.1);
   }
 
   .section-divider {
