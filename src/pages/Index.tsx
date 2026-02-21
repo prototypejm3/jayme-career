@@ -12,12 +12,12 @@ import ContactSection from "@/components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
 
 const tabs = [
-  { id: "about", label: "About" },
-  { id: "expertise", label: "Expertise" },
-  { id: "projects", label: "Side Projects" },
-  { id: "experience", label: "Experience" },
-  { id: "vouches", label: "Vouches" },
-  { id: "contact", label: "Contact" },
+  { id: "about", label: "Perspective" },
+  { id: "expertise", label: "Talent Architecture" },
+  { id: "projects", label: "Independent Builds" },
+  { id: "experience", label: "Work" },
+  { id: "vouches", label: "What Others Say" },
+  { id: "contact", label: "Start a Conversation" },
 ] as const;
 
 type TabId = (typeof tabs)[number]["id"];
