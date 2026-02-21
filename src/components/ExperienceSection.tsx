@@ -33,6 +33,7 @@ const experiences = [
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
     highlights: ["Etsy", "Banyan", "Celonis"],
+    teamSize: "Team of 2",
     stakeholders: ["Kyle Langworthy (Manager)", "Matt Skiba", "Bobby Gormsen", "Alix Woodriff", "Corinne Murberry", "Will Potter"],
     reviews: [] as ReviewNote[],
   },
@@ -58,6 +59,7 @@ const experiences = [
       "Founding Eng, Staff, Principal & Executive AI/ML Talent. Clients include: Character AI, Luma AI, Together AI, Scale AI, Orby, Tavus, Hume, Foundry, Hebbia, Chroma, Rippling, ClickUp, Verkada, Applied Intuition, dYdX, Yuga Labs, Magic Eden, Aptos, Moonpay, Gemini, and more.",
     tech: ["AI/ML Talent", "Executive Recruiting", "Crypto/Web3"],
     highlights: ["Character AI", "Cable", "Gable", "Cartesia"],
+    teamSize: "Team of 6",
     stakeholders: ["Mike Rooney (Manager)", "Alix Woodriff", "Josh Kohler", "Seth Funahashi", "Nelly Murodova"],
     reviews: [] as ReviewNote[],
   },
@@ -70,6 +72,7 @@ const experiences = [
     description:
       "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
     tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
+    teamSize: "Team of 4",
     stakeholders: ["Matt Skiba", "Jake Adams", "Claire Hart", "George Pang", "Justin Huang", "James Bancroft"],
     reviews: [] as ReviewNote[],
   },
@@ -83,6 +86,7 @@ const experiences = [
       "Promoted to Principal 2020. Placed 55 leaders across public and VC-backed organizations. Notable clients: Weight Watchers, FanDuel, Spotify, Wish, Etsy, Genies, Blizzard, Amex, Moda Operandi, Tamara Mellon, Goop, Rent the Runway, Daily Harvest, KOHO, Betterment → Sequoia, NEA, A16Z, Lightspeed, Accel. Part of the DEI committee & ambassador for AboveBoard.",
     tech: ["Executive Search", "DEI", "VC-Backed"],
     highlights: ["Spotify", "Weight Watchers", "KOHO", "Wish", "Genies", "FanDuel"],
+    teamSize: "Team of 4",
     stakeholders: ["Thor Bucy", "Jemma Colleta", "John Pomeraz", "Kalli Frampton"],
     reviews: [] as ReviewNote[],
   },
@@ -96,6 +100,7 @@ const experiences = [
       "Supported AI/ML and iOS hiring across junior to manager levels for Apple's Siri team. As Director of Recruiting for Frontier Tech, established all KPIs & SOPs, created a recruitment training guide from scratch. Launched a new program with 12 direct reports, increasing company metrics by 60%. President's Club x2. Notable clients: Apple, Cisco, Tesla, Adobe, Facebook, Dropbox, Mercedes Benz, Sephora.",
     tech: ["AI/ML", "iOS", "President's Club x2"],
     highlights: ["Apple", "Cisco", "Adobe", "Facebook", "Dropbox", "Mercedes Benz"],
+    teamSize: "Team of 12",
     stakeholders: ["Dan Pollock", "Alexandra Hawayek (CEO)", "Jenna Llama (Tech Talent)"],
     reviews: [] as ReviewNote[],
   },
@@ -108,6 +113,7 @@ const experiences = [
     description:
       "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
     tech: ["Revenue Growth", "Vendor Relations", "Condé Nast Rated"],
+    teamSize: "115 across 5 outlets",
     stakeholders: ["Kurtis Hurt (Director)"],
     reviews: [] as ReviewNote[],
   },
@@ -120,6 +126,7 @@ const experiences = [
     description:
       "As the youngest person elected for this position: Assisted in Strategic Planning for 2014–2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
     tech: ["Forbes 5-Star", "AAA 5-Diamond", "Gallup #2"],
+    teamSize: "Team of 85",
     stakeholders: ["Liam Doyle (EVP)", "Kurtis Hurt (Director)", "Dan Missal (Director)"],
     reviews: [] as ReviewNote[],
   },
@@ -156,6 +163,11 @@ const ExperienceSection = () => {
                   {exp.highlights && exp.highlights.length > 0 && (
                     <p className="text-muted-foreground text-xs font-body mt-0.5">
                       {exp.highlights.join(" · ")}
+                    </p>
+                  )}
+                  {exp.teamSize && (
+                    <p className="text-muted-foreground/70 text-[11px] font-body mt-0.5">
+                      {exp.teamSize}
                     </p>
                   )}
                 </div>
