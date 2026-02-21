@@ -1,21 +1,13 @@
 const companies = [
   {
-    title: "Luminary Logic",
-    subtitle: "Talent Architecture for Early-Stage Companies",
+    title: "Cardaom",
+    subtitle: "Activated liquid spice blends",
+    link: "https://www.instagram.com/spicecardaom/?hl=en",
     sections: [
-      { heading: "Focus", content: "Talent strategy + executive hiring for AI-native startups." },
-      { heading: "Worked With", content: "Edge Runner · Besty AI · Genies · Early-stage AI & vertical SaaS teams" },
-      { heading: "What I Built", items: ["Hiring roadmaps", "Structured evaluation frameworks", "Leadership search execution", "Founder-level partnership"] },
+      { heading: "Concept", content: "Functional, activated spice blends designed for modern kitchens." },
+      { heading: "What I Built", items: ["Brand strategy", "Product positioning", "Ingredient philosophy", "Early customer testing"] },
     ],
-    skills: "Org design · Executive evaluation · Founder partnership",
-  },
-  {
-    title: "Supplemind",
-    subtitle: "Personal supplement tracker",
-    sections: [
-      { heading: "Concept", content: "A personal supplement tracker built in 2019 for friends and family." },
-    ],
-    skills: "Product design · Personal tooling",
+    skills: "Brand architecture · GTM narrative · Consumer positioning",
   },
   {
     title: "Alias",
@@ -28,14 +20,22 @@ const companies = [
     skills: "Product thinking · Behavioral design · UX systems",
   },
   {
-    title: "Cardaom",
-    subtitle: "Activated liquid spice blends",
-    link: "https://www.instagram.com/spicecardaom/?hl=en",
+    title: "Supplemind",
+    subtitle: "Personal supplement tracker",
     sections: [
-      { heading: "Concept", content: "Functional, activated spice blends designed for modern kitchens." },
-      { heading: "What I Built", items: ["Brand strategy", "Product positioning", "Ingredient philosophy", "Early customer testing"] },
+      { heading: "Concept", content: "A personal supplement tracker built in 2019 for friends and family." },
     ],
-    skills: "Brand architecture · GTM narrative · Consumer positioning",
+    skills: "Product design · Personal tooling",
+  },
+  {
+    title: "Luminary Logic",
+    subtitle: "Talent Architecture for Early-Stage Companies",
+    sections: [
+      { heading: "Focus", content: "Talent strategy + executive hiring for AI-native startups." },
+      { heading: "Worked With", content: "Edge Runner · Besty AI · Genies · Early-stage AI & vertical SaaS teams" },
+      { heading: "What I Built", items: ["Hiring roadmaps", "Structured evaluation frameworks", "Leadership search execution", "Founder-level partnership"] },
+    ],
+    skills: "Org design · Executive evaluation · Founder partnership",
   },
 ];
 
