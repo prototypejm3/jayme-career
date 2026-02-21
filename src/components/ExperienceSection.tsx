@@ -68,7 +68,7 @@ const experiences = [
     description:
       "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
     tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
-    stakeholders: ["Matt Skiba", "Jake Adams", "Claire Hart", "George Pang", "Justin Pang", "James Bancroft"],
+    stakeholders: ["Matt Skiba", "Jake Adams", "Claire Hart", "George Pang", "Justin Huang", "James Bancroft"],
     reviews: [
       {
         reviewer: "Matthew Skiba",
