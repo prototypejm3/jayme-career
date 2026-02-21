@@ -36,7 +36,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="text-muted-foreground text-lg sm:text-xl max-w-lg leading-relaxed mb-10"
         >
-          9+ years connecting world-class talent with the companies shaping the future — from Ritz-Carlton to Riviera Partners, scaling teams at unicorns and placing 55+ leaders.
+          Operations leader from Ritz-Carlton turned talent partner with 10+ years connecting world-class talent with the companies shaping the future.
         </motion.p>
 
         <motion.div
