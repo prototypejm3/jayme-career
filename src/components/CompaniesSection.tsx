@@ -55,6 +55,7 @@ const companies = [
   {
     title: "Caroam",
     subtitle: "Activated liquid spice blends",
+    link: "https://www.instagram.com/spicecardaom/?hl=en",
     sections: [
       {
         heading: "Concept",
@@ -94,7 +95,13 @@ const CompaniesSection = () => (
             className="bg-background p-8 flex flex-col"
           >
             <h3 className="font-display text-xl font-bold text-foreground mb-1">
-              {company.title}
+              {company.link ? (
+                <a href={company.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {company.title} ↗
+                </a>
+              ) : (
+                company.title
+              )}
             </h3>
             <p className="text-muted-foreground text-xs tracking-wide uppercase font-display mb-6">
               {company.subtitle}
