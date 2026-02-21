@@ -16,7 +16,7 @@ const ContactSection = () => (
     </p>
 
     <a
-      href="mailto:alex@example.com"
+      href="mailto:Jaymel.karr@gmail.com"
       className="inline-flex items-center gap-3 font-display font-semibold text-primary-foreground bg-primary px-8 py-4 rounded-full hover:opacity-90 transition-opacity duration-300 group"
     >
       <Mail size={18} />
