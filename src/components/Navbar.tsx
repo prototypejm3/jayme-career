@@ -1,57 +1,56 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Expertise", href: "#expertise" },
-  { label: "Companies", href: "#companies" },
-  { label: "Experience", href: "#experience" },
-  { label: "Vouches", href: "#vouches" },
-  { label: "Contact", href: "#contact" },
-];
+interface Tab {
+  id: string;
+  label: string;
+}
 
-const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+interface NavbarProps {
+  tabs: readonly Tab[];
+  activeTab: string;
+  onTabChange: (id: string) => void;
+}
+
+const Navbar = ({ tabs, activeTab, onTabChange }: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const handleClick = (href: string) => {
+  const handleClick = (id: string) => {
+    onTabChange(id);
     setMobileOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/90 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="shrink-0 bg-background border-b border-border">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-14">
         <button
-          onClick={() => handleClick("#about")}
+          onClick={() => handleClick("about")}
           className="font-display font-bold text-lg text-foreground"
         >
           JK
         </button>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+        <div className="hidden md:flex items-center gap-1">
+          {tabs.map((tab) => (
             <button
-              key={item.href}
-              onClick={() => handleClick(item.href)}
-              className="text-sm font-display text-muted-foreground hover:text-foreground transition-colors"
+              key={tab.id}
+              onClick={() => handleClick(tab.id)}
+              className={`relative text-sm font-display px-3 py-1.5 rounded transition-colors ${
+                activeTab === tab.id
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
-              {item.label}
+              {tab.label}
+              {activeTab === tab.id && (
+                <motion.div
+                  layoutId="tab-underline"
+                  className="absolute bottom-0 left-2 right-2 h-px bg-foreground"
+                  transition={{ type: "spring", bounce: 0.15, duration: 0.4 }}
+                />
+              )}
             </button>
           ))}
         </div>
@@ -76,13 +75,17 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-background border-b border-border"
           >
             <div className="px-6 py-4 flex flex-col gap-3">
-              {navItems.map((item) => (
+              {tabs.map((tab) => (
                 <button
-                  key={item.href}
-                  onClick={() => handleClick(item.href)}
-                  className="text-sm font-display text-muted-foreground hover:text-foreground transition-colors text-left"
+                  key={tab.id}
+                  onClick={() => handleClick(tab.id)}
+                  className={`text-sm font-display transition-colors text-left ${
+                    activeTab === tab.id
+                      ? "text-foreground font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
-                  {item.label}
+                  {tab.label}
                 </button>
               ))}
             </div>
