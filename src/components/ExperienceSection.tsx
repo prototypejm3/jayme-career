@@ -95,6 +95,7 @@ const experiences = [
     description:
       "Supported AI/ML and iOS hiring across junior to manager levels for Apple's Siri team. As Director of Recruiting for Frontier Tech, established all KPIs & SOPs, created a recruitment training guide from scratch. Launched a new program with 12 direct reports, increasing company metrics by 60%. President's Club x2. Notable clients: Apple, Cisco, Tesla, Adobe, Facebook, Dropbox, Mercedes Benz, Sephora.",
     tech: ["AI/ML", "iOS", "President's Club x2"],
+    highlights: ["Apple", "Cisco", "Adobe", "Facebook", "Dropbox", "Mercedes Benz"],
     stakeholders: ["Dan Pollock", "Alexandra Hawayek (CEO)", "Jenna Llama (Tech Talent)"],
     reviews: [] as ReviewNote[],
   },
