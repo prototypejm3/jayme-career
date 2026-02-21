@@ -1,42 +1,138 @@
-import { motion } from "framer-motion";
-
 const companies = [
-  "Spotify", "Weight Watchers (WW)", "Etsy", "Genies", "Willow",
-  "Rue Gilt Groupe", "Hungryroot", "KOHO", "Celonis",
-  "Character AI", "Luma AI", "Together AI",
+  {
+    title: "Luminary Logic",
+    subtitle: "Talent Architecture for Early-Stage Companies",
+    sections: [
+      {
+        heading: "Focus",
+        content: "Talent strategy + executive hiring for AI-native startups.",
+      },
+      {
+        heading: "Worked With",
+        content: "Edge Runner · Besty AI · Genies · Early-stage AI & vertical SaaS teams",
+      },
+      {
+        heading: "What I Built",
+        items: [
+          "Hiring roadmaps",
+          "Structured evaluation frameworks",
+          "Leadership search execution",
+          "Founder-level partnership",
+        ],
+      },
+    ],
+    skills: "Org design · Executive evaluation · Founder partnership",
+  },
+  {
+    title: "Alias",
+    subtitle: "Anonymous publishing platform grounded in cognitive theory",
+    sections: [
+      {
+        heading: "Concept",
+        content:
+          "A platform for anonymous expression structured through guided prompts and cognitive frameworks.",
+      },
+      {
+        heading: "What I Built",
+        items: [
+          "Product concept",
+          "UX flow design",
+          "Prompt architecture",
+          "Narrative systems",
+        ],
+      },
+      {
+        heading: "Explores",
+        items: [
+          "Identity & narrative psychology",
+          "Structured reflection",
+          "Ego-minimized community",
+        ],
+      },
+    ],
+    skills: "Product thinking · Behavioral design · UX systems",
+  },
+  {
+    title: "Caroam",
+    subtitle: "Activated liquid spice blends",
+    sections: [
+      {
+        heading: "Concept",
+        content:
+          "Functional, activated spice blends designed for modern kitchens.",
+      },
+      {
+        heading: "What I Built",
+        items: [
+          "Brand strategy",
+          "Product positioning",
+          "Ingredient philosophy",
+          "Early customer testing",
+        ],
+      },
+    ],
+    skills: "Brand architecture · GTM narrative · Consumer positioning",
+  },
 ];
 
 const CompaniesSection = () => (
-  <section className="py-20 px-6 border-t border-border">
-    <div className="max-w-5xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-10"
-      >
-        <p className="text-muted-foreground text-sm tracking-[0.2em] uppercase font-display">
-          Companies I've Worked With (Agency Side)
+  <section className="py-24 px-6 bg-background">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-16">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3 text-foreground">
+          Companies I've Built
+        </h2>
+        <p className="text-muted-foreground text-base font-body">
+          I don't just hire for companies. I build them.
         </p>
-      </motion.div>
+      </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {companies.map((name, i) => (
-          <motion.div
-            key={name}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
-            className="rounded-xl border border-border bg-card/50 px-4 py-5"
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
+        {companies.map((company) => (
+          <div
+            key={company.title}
+            className="bg-background p-8 flex flex-col"
           >
-            <span className="text-foreground/80 font-display text-sm font-semibold tracking-wide">
-              {name}
-            </span>
-          </motion.div>
+            <h3 className="font-display text-xl font-bold text-foreground mb-1">
+              {company.title}
+            </h3>
+            <p className="text-muted-foreground text-xs tracking-wide uppercase font-display mb-6">
+              {company.subtitle}
+            </p>
+
+            <div className="space-y-5 flex-1">
+              {company.sections.map((section) => (
+                <div key={section.heading}>
+                  <h4 className="font-display text-sm font-semibold text-foreground mb-1.5">
+                    {section.heading}
+                  </h4>
+                  {section.content && (
+                    <p className="text-muted-foreground text-sm font-body leading-relaxed">
+                      {section.content}
+                    </p>
+                  )}
+                  {section.items && (
+                    <ul className="text-muted-foreground text-sm font-body leading-relaxed space-y-0.5">
+                      {section.items.map((item) => (
+                        <li key={item}>• {item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <p className="text-muted-foreground/70 text-xs font-body mt-8 pt-4 border-t border-border">
+              <span className="font-semibold">Operator Skills:</span>{" "}
+              {company.skills}
+            </p>
+          </div>
         ))}
       </div>
+
+      <p className="text-center text-muted-foreground text-sm font-body mt-16 max-w-2xl mx-auto italic">
+        Across every build — talent, product, or brand — I focus on systems, clarity, and narrative.
+      </p>
     </div>
   </section>
 );
