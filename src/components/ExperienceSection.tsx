@@ -236,9 +236,9 @@ const ExperienceSection = () => {
                             {exp.reviews.map((review, idx) => (
                               <div key={idx} className="rounded-lg border border-border bg-background p-5">
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                  {/* Left: reviewer info & rating */}
-                                  <div className="sm:w-48 shrink-0">
-                                    <div className="flex items-center gap-2 mb-3">
+                                  {/* Left: reviewer info */}
+                                  <div className="sm:w-40 shrink-0">
+                                    <div className="flex items-center gap-2">
                                       <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-display font-bold text-primary">
                                         {review.reviewer.split(" ").map(n => n[0]).join("")}
                                       </div>
@@ -246,22 +246,6 @@ const ExperienceSection = () => {
                                         <p className="font-display text-sm font-semibold leading-tight">{review.reviewer}</p>
                                         <span className="text-[10px] font-display px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{review.role}</span>
                                       </div>
-                                    </div>
-                                    <div className="mb-1">
-                                      <span className="text-primary font-display text-[10px] tracking-[0.15em] uppercase">Rating</span>
-                                      <span className="text-muted-foreground text-xs ml-2">{review.rating}/5</span>
-                                    </div>
-                                    <div className="flex gap-1 mb-2">
-                                      {[1, 2, 3, 4, 5].map((i) => (
-                                        <div key={i} className="flex items-center gap-0.5">
-                                          <div className={`w-2 h-2 rounded-full ${i <= review.rating ? "bg-primary" : "bg-muted"}`} />
-                                          {i < 5 && <div className={`w-3 h-0.5 ${i < review.rating ? "bg-primary" : "bg-muted"}`} />}
-                                        </div>
-                                      ))}
-                                    </div>
-                                    <div className="pl-2 border-l-2 border-primary/30">
-                                      <span className="font-display text-sm font-bold text-primary">{review.rating}</span>
-                                      <p className="text-xs text-foreground font-display leading-tight">{scaleLabels[review.rating]}</p>
                                     </div>
                                   </div>
 
