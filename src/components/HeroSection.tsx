@@ -14,17 +14,12 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2">Jayme Karr</h1>
+          <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-1">
             Head of Talent
           </p>
+          <p className="text-muted-foreground font-body text-sm mb-6">NYC / SF</p>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-8"
-        />
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
