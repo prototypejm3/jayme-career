@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6">
-            Talent & Recruiting Leader
+            Head of Talent
           </p>
         </motion.div>
 
@@ -34,9 +34,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="text-muted-foreground text-lg sm:text-xl max-w-lg leading-relaxed mb-10"
+          className="text-muted-foreground text-lg sm:text-xl max-w-lg leading-relaxed mb-10 space-y-4"
         >
-          Operations leader from Ritz-Carlton turned talent partner with 10+ years connecting world-class talent with the companies shaping the future.
+          <span className="block">Operator with 10+ years building technical and executive teams across AI, product, and engineering.</span>
+          <span className="block">Began recruiting NLP engineers for the Siri team at Apple, then joined True Search as an early member of the Product, Data & Technology practice, placing 50+ executives for companies including Spotify, WW, Wish, and Rue Gilt Groupe.</span>
+          <span className="block">Joined Genies as an early employee and led technical recruiting from Series A → C, helping scale the company to ~200 employees and a $1B valuation. Built foundational research, engineering, and product teams in close partnership with leadership.</span>
+          <span className="block">Today, I advise early-stage companies on hiring founding technical leaders and building scalable, high-bar talent systems. Deeply excited about how AI and low-code tools are reshaping how teams build — and how talent functions operate.</span>
         </motion.p>
 
         <motion.div
