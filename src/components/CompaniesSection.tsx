@@ -40,7 +40,7 @@ const companies = [
 ];
 
 const CompaniesSection = () => (
-  <section className="py-24 px-6 bg-background">
+  <div className="py-24 px-6 bg-background overflow-y-auto h-full">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3 text-foreground">
@@ -51,7 +51,7 @@ const CompaniesSection = () => (
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border">
         {companies.map((company) => (
           <div
             key={company.title}
@@ -104,7 +104,7 @@ const CompaniesSection = () => (
         Across every project — talent, product, or brand — I focus on systems, clarity, and narrative.
       </p>
     </div>
-  </section>
+  </div>
 );
 
 export default CompaniesSection;
