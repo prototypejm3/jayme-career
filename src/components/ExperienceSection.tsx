@@ -162,7 +162,7 @@ const ExperienceSection = () => {
                   <p className="text-primary text-sm">{exp.company}</p>
                   {exp.highlights && exp.highlights.length > 0 && (
                     <p className="text-muted-foreground text-xs font-body mt-0.5">
-                      {exp.highlights.join(" · ")}
+                      <span className="font-medium">Clients:</span> {exp.highlights.join(" · ")}
                     </p>
                   )}
                   {exp.teamSize && (
