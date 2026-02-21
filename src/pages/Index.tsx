@@ -12,12 +12,11 @@ import ContactSection from "@/components/ContactSection";
 import { AnimatePresence, motion } from "framer-motion";
 
 const tabs = [
-  { id: "about", label: "Perspective" },
+  { id: "about", label: "Greetings" },
   { id: "expertise", label: "Talent Architecture" },
   { id: "projects", label: "Independent Builds" },
   { id: "experience", label: "Operating History" },
   { id: "vouches", label: "What Others Say" },
-  { id: "contact", label: "Start a Conversation" },
 ] as const;
 
 type TabId = (typeof tabs)[number]["id"];
@@ -28,7 +27,12 @@ const Index = () => {
   const renderContent = () => {
     switch (activeTab) {
       case "about":
-        return <HeroSection />;
+        return (
+          <div className="overflow-y-auto h-full">
+            <HeroSection />
+            <ContactSection />
+          </div>
+        );
       case "expertise":
         return (
           <div className="overflow-y-auto h-full">
@@ -52,8 +56,6 @@ const Index = () => {
             <ReferencesSection />
           </div>
         );
-      case "contact":
-        return <ContactSection />;
       default:
         return null;
     }
