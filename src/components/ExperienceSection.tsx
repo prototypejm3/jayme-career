@@ -78,6 +78,12 @@ const experiences = [
         rating: 3,
         text: "Jayme has lived up to our performance expectations over the last 6 months. I will continue to say that Genies would not be the company it is without Jayme Karr, but I have seen a slight plateau overall this last quarter. Again, I acknowledge that we faced seasonal headwinds and a foreign market phenomenon with a looming recession this last quarter, but Jayme only managed to close 2 candidates in Q3 after closing 5 in Q2. With this said Jayme did go above and beyond in other functional responsibilities. She successfully advanced the engineering recruiting process and interview training for all new engineers, and supported her team during the vacation absences. Helping to close 2 key hires during my vacation.",
       },
+      {
+        reviewer: "Matthew Skiba",
+        role: "Manager",
+        rating: 4,
+        text: "Over the last 6 months, Jayme accomplished the following:\n\n• Played a key role in rebooting the engineering recruiting process to ensure greater alignment, better candidate experience, and reduced timelines to hire (February 2023 to Present)\n• Closed 5 headcount: Sr. Mobile QA Engineer, Sr TPM, Software Engineer (E4), Cloud Infrastructure Engineer (E4), and Product Design\n• Took ownership of the R&D hiring pipeline - Machine Learning/AI & Technical Artists (February 2023 to present)\n• Offer Acceptance Rate: 85% (5 out of 6 - solo offer decline was a role we eventually deprecated; Product Analyst)\n• 34% of all candidates that reached onsite or panel interview process identified as female\n• 85% of all candidates that reached onsite or panel interview process identified as a member of the global majority",
+      },
     ],
   },
   {
