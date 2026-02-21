@@ -113,7 +113,7 @@ const experiences = [
     description:
       "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
     tech: ["Revenue Growth", "Vendor Relations", "Condé Nast Rated"],
-    teamSize: "115 across 5 outlets",
+    teamSize: "Team of 115 across 5 outlets",
     stakeholders: ["Kurtis Hurt (Director)"],
     reviews: [] as ReviewNote[],
   },
