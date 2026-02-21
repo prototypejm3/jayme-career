@@ -6,6 +6,18 @@ import { ChevronDown } from "lucide-react";
 
 const references = [
   {
+    name: "Matthew Skiba",
+    title: "Performance Review Summary — Genies",
+    tag: "Performance Review",
+    quote: "Genies would not be the company it is without Jayme Karr. Not only is Jayme one of the highest performers I've ever worked with, her attitude and what she stands for is what we should look for in everyone we hire. Jayme is always thinking forward and observing what's around her — bringing ideas, insights and solutions to the table.",
+  },
+  {
+    name: "Matthew Skiba",
+    title: "Performance Review Summary — Genies",
+    tag: "Performance Review",
+    quote: "Played a key role in rebooting the engineering recruiting process. Closed 5 headcount. Took ownership of the R&D hiring pipeline — Machine Learning/AI & Technical Artists. Offer Acceptance Rate: 85%. 34% of all candidates that reached onsite identified as female. 85% identified as a member of the global majority.",
+  },
+  {
     name: "Da Li",
     title: "Director of Engineering, Genies (ex-Chainlink, ex-Facebook)",
     quote:
@@ -142,6 +154,11 @@ const ReferencesSection = () => {
               <p className="text-muted-foreground text-xs leading-snug">
                 {ref.title}
               </p>
+              {ref.tag && (
+                <span className="inline-block mt-1.5 text-[10px] font-display px-2 py-0.5 rounded-full bg-primary/10 text-primary">
+                  {ref.tag}
+                </span>
+              )}
             </div>
           </motion.div>
         ))}
