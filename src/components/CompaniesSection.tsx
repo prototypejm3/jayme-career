@@ -28,7 +28,7 @@ const companies = [
     skills: "Product thinking · Behavioral design · UX systems",
   },
   {
-    title: "Caroam",
+    title: "Cardaom",
     subtitle: "Activated liquid spice blends",
     link: "https://www.instagram.com/spicecardaom/?hl=en",
     sections: [
