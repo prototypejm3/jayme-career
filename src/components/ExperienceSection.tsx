@@ -2,6 +2,21 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
+interface ReviewNote {
+  reviewer: string;
+  role: string;
+  rating: number;
+  text: string;
+}
+
+const scaleLabels: Record<number, string> = {
+  1: "Needs strong improvement",
+  2: "Needs development",
+  3: "Meets expectations",
+  4: "Exceeds expectations",
+  5: "Sets a new standard",
+};
+
 const experiences = [
   {
     id: 1,
@@ -17,6 +32,7 @@ const experiences = [
       description: "Search Excellence, Sales Efficiency and Market Awareness.",
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 2,
@@ -27,6 +43,7 @@ const experiences = [
     description:
       "Worked side-by-side with the CEO, CTO, and Head of Ops to shape how the company approached recruiting and to build stronger hiring habits. Tested and gave feedback on their AI sourcing tools, helping the team make them easier and more effective to use. Spent time directly with the Customer Success team, coaching them 1:1 and helping them level up their recruiting skills.",
     tech: ["AI Sourcing Tools", "Coaching", "Strategy"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 3,
@@ -37,6 +54,7 @@ const experiences = [
     description:
       "Founding Eng, Staff, Principal & Executive AI/ML Talent. Clients include: Character AI, Luma AI, Together AI, Scale AI, Orby, Tavus, Hume, Foundry, Hebbia, Chroma, Rippling, ClickUp, Verkada, Applied Intuition, dYdX, Yuga Labs, Magic Eden, Aptos, Moonpay, Gemini, and more.",
     tech: ["AI/ML Talent", "Executive Recruiting", "Crypto/Web3"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 4,
@@ -47,6 +65,14 @@ const experiences = [
     description:
       "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
     tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
+    reviews: [
+      {
+        reviewer: "Matthew Skiba",
+        role: "Manager",
+        rating: 4,
+        text: "As I previously shared, Genies would not be the company it is without Jayme Karr. From the moment Jayme arrived at Genies last year her impact was felt. Not only is Jayme one of the highest performers I've ever worked with, her attitude and what she stands for is what we should look for in everyone we hire.\n\nJayme believes in Genies, its mission, and our virtues at her core. Jayme knows that her success leads to the success of others and Genies; which to me demonstrates everyone one of our virtues: 20% - always looking to solve problem, strategic thinker, bring/offer solutions; BSE - Whether it be sourcing and mapping the international unity market or willing to engage them knowing the possible challenges, Jayme has opened the door to great talent that others undervalue; PNP - Jayme is always thinking forward and observing what's around her. What she learns from conversations or from her network, Jayme is always bringing ideas, insights and solutions to the table. Her work ethic and commitment to our brand also fulfills anyone one of our virtues. When I think of Jayme I don't question that she embodies our values but that she is also trustworthy, honest, humble, caring, thoughtful, determined, resilient, and respectful.",
+      },
+    ],
   },
   {
     id: 5,
@@ -57,6 +83,7 @@ const experiences = [
     description:
       "Promoted to Principal 2020. Placed 55 leaders across public and VC-backed organizations. Notable clients: Weight Watchers, FanDuel, Spotify, Wish, Etsy, Genies, Blizzard, Amex, Moda Operandi, Tamara Mellon, Goop, Rent the Runway, Daily Harvest, KOHO, Betterment → Sequoia, NEA, A16Z, Lightspeed, Accel. Part of the DEI committee & ambassador for AboveBoard.",
     tech: ["Executive Search", "DEI", "VC-Backed"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 6,
@@ -67,6 +94,7 @@ const experiences = [
     description:
       "Supported AI/ML and iOS hiring across junior to manager levels for Apple's Siri team. As Director of Recruiting for Frontier Tech, established all KPIs & SOPs, created a recruitment training guide from scratch. Launched a new program with 12 direct reports, increasing company metrics by 60%. President's Club x2. Notable clients: Apple, Cisco, Tesla, Adobe, Facebook, Dropbox, Mercedes Benz, Sephora.",
     tech: ["AI/ML", "iOS", "President's Club x2"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 8,
@@ -77,6 +105,7 @@ const experiences = [
     description:
       "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
     tech: ["Revenue Growth", "Vendor Relations", "Condé Nast Rated"],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 9,
@@ -87,6 +116,7 @@ const experiences = [
     description:
       "As the youngest person elected for this position: Assisted in Strategic Planning for 2014–2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
     tech: ["Forbes 5-Star", "AAA 5-Diamond", "Gallup #2"],
+    reviews: [] as ReviewNote[],
   },
 ];
 
@@ -151,7 +181,7 @@ const ExperienceSection = () => {
                           <p className="text-secondary-foreground text-sm">{exp.previousRole.description}</p>
                         </div>
                       )}
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {exp.tech.map((t) => (
                           <span
                             key={t}
@@ -161,6 +191,55 @@ const ExperienceSection = () => {
                           </span>
                         ))}
                       </div>
+
+                      {exp.reviews.length > 0 && (
+                        <div className="mt-6 pt-6 border-t border-border">
+                          <p className="text-primary font-display text-xs tracking-[0.2em] uppercase mb-4">
+                            Performance Review Notes
+                          </p>
+                          <div className="space-y-5">
+                            {exp.reviews.map((review, idx) => (
+                              <div key={idx} className="rounded-lg border border-border bg-background p-5">
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                  {/* Left: reviewer info & rating */}
+                                  <div className="sm:w-48 shrink-0">
+                                    <div className="flex items-center gap-2 mb-3">
+                                      <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-display font-bold text-primary">
+                                        {review.reviewer.split(" ").map(n => n[0]).join("")}
+                                      </div>
+                                      <div>
+                                        <p className="font-display text-sm font-semibold leading-tight">{review.reviewer}</p>
+                                        <span className="text-[10px] font-display px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{review.role}</span>
+                                      </div>
+                                    </div>
+                                    <div className="mb-1">
+                                      <span className="text-primary font-display text-[10px] tracking-[0.15em] uppercase">Rating</span>
+                                      <span className="text-muted-foreground text-xs ml-2">{review.rating}/5</span>
+                                    </div>
+                                    <div className="flex gap-1 mb-2">
+                                      {[1, 2, 3, 4, 5].map((i) => (
+                                        <div key={i} className="flex items-center gap-0.5">
+                                          <div className={`w-2 h-2 rounded-full ${i <= review.rating ? "bg-primary" : "bg-muted"}`} />
+                                          {i < 5 && <div className={`w-3 h-0.5 ${i < review.rating ? "bg-primary" : "bg-muted"}`} />}
+                                        </div>
+                                      ))}
+                                    </div>
+                                    <div className="pl-2 border-l-2 border-primary/30">
+                                      <span className="font-display text-sm font-bold text-primary">{review.rating}</span>
+                                      <p className="text-xs text-foreground font-display leading-tight">{scaleLabels[review.rating]}</p>
+                                    </div>
+                                  </div>
+
+                                  {/* Right: review text */}
+                                  <p className="text-secondary-foreground text-sm leading-relaxed whitespace-pre-line flex-1">
+                                    {review.text}
+                                  </p>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 )}
