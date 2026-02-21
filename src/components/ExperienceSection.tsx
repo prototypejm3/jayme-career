@@ -71,26 +71,7 @@ const experiences = [
       "Employee #24 — scaled the company to ~150 employees. Built and led recruitment strategy for hires from Amazon, Snap, Meta/Oculus, Google, Pinterest, Unity, Salesforce, Microsoft, TikTok, Scale AI, AAA Studios. Led all tech recruiting for Marketplace & Dev-Kit teams. Led R&D recruiting for AI/ML, Game Engine, Unity, Gameplay, and Graphics roles. Helped scale through $250M funding rounds led by Silver Lake, BOND, NEA, and Bob Iger, reaching a $1B valuation.",
     tech: ["Full-Stack", "AI/ML", "Game Engine", "Blockchain"],
     stakeholders: ["Matt Skiba", "Jake Adams", "Claire Hart", "George Pang", "Justin Huang", "James Bancroft"],
-    reviews: [
-      {
-        reviewer: "Matthew Skiba",
-        role: "Manager",
-        rating: 4,
-        text: "As I previously shared, Genies would not be the company it is without Jayme Karr. From the moment Jayme arrived at Genies last year her impact was felt. Not only is Jayme one of the highest performers I've ever worked with, her attitude and what she stands for is what we should look for in everyone we hire.\n\nJayme believes in Genies, its mission, and our virtues at her core. Jayme knows that her success leads to the success of others and Genies; which to me demonstrates everyone one of our virtues: 20% - always looking to solve problem, strategic thinker, bring/offer solutions; BSE - Whether it be sourcing and mapping the international unity market or willing to engage them knowing the possible challenges, Jayme has opened the door to great talent that others undervalue; PNP - Jayme is always thinking forward and observing what's around her. What she learns from conversations or from her network, Jayme is always bringing ideas, insights and solutions to the table. Her work ethic and commitment to our brand also fulfills anyone one of our virtues. When I think of Jayme I don't question that she embodies our values but that she is also trustworthy, honest, humble, caring, thoughtful, determined, resilient, and respectful.",
-      },
-      {
-        reviewer: "Matthew Skiba",
-        role: "Manager",
-        rating: 3,
-        text: "Jayme has lived up to our performance expectations over the last 6 months. I will continue to say that Genies would not be the company it is without Jayme Karr, but I have seen a slight plateau overall this last quarter. Again, I acknowledge that we faced seasonal headwinds and a foreign market phenomenon with a looming recession this last quarter, but Jayme only managed to close 2 candidates in Q3 after closing 5 in Q2. With this said Jayme did go above and beyond in other functional responsibilities. She successfully advanced the engineering recruiting process and interview training for all new engineers, and supported her team during the vacation absences. Helping to close 2 key hires during my vacation.",
-      },
-      {
-        reviewer: "Matthew Skiba",
-        role: "Manager",
-        rating: 4,
-        text: "Over the last 6 months, Jayme accomplished the following:\n\n• Played a key role in rebooting the engineering recruiting process to ensure greater alignment, better candidate experience, and reduced timelines to hire (February 2023 to Present)\n• Closed 5 headcount: Sr. Mobile QA Engineer, Sr TPM, Software Engineer (E4), Cloud Infrastructure Engineer (E4), and Product Design\n• Took ownership of the R&D hiring pipeline - Machine Learning/AI & Technical Artists (February 2023 to present)\n• Offer Acceptance Rate: 85% (5 out of 6 - solo offer decline was a role we eventually deprecated; Product Analyst)\n• 34% of all candidates that reached onsite or panel interview process identified as female\n• 85% of all candidates that reached onsite or panel interview process identified as a member of the global majority",
-      },
-    ],
+    reviews: [] as ReviewNote[],
   },
   {
     id: 5,
