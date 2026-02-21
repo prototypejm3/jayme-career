@@ -19,16 +19,12 @@ const HeroSection = () => {
           </p>
         </motion.div>
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
-        >
-          Data, AI
-          <br />
-          <span className="text-gradient">& Research</span>
-        </motion.h1>
+          className="mb-8"
+        />
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
