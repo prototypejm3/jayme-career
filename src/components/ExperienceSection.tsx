@@ -69,14 +69,24 @@ const experiences = [
     tech: ["AI/ML", "iOS", "President's Club x2"],
   },
   {
-    id: 7,
-    role: "Talent Advisor & Tech Recruiter",
-    company: "Vega Partners / AppBuddy",
-    period: "Jan 2016 — Aug 2018",
-    location: "",
+    id: 8,
+    role: "Head of Operations & Corporate Event Manager",
+    company: "Destination by Hyatt",
+    period: "Mar 2016 — Dec 2016",
+    location: "Greater San Diego Area",
     description:
-      "Provided guidance pertaining to strategic technology hires within Fintech & IoT/AI start-ups. Helped create and integrate internal learning, development & training. Established best practices. Made a lot of phone calls and even more friends :)",
-    tech: ["Fintech", "IoT/AI", "Training"],
+      "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
+    tech: ["Revenue Growth", "Vendor Relations", "Condé Nast Rated"],
+  },
+  {
+    id: 9,
+    role: "Learning Coach & Operations Supervisor",
+    company: "The Ritz-Carlton Hotel Company",
+    period: "Apr 2013 — Mar 2016",
+    location: "5 Star 5 Diamond · Dove Mountain",
+    description:
+      "As the youngest person elected for this position: Assisted in Strategic Planning for 2014–2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
+    tech: ["Forbes 5-Star", "AAA 5-Diamond", "Gallup #2"],
   },
 ];
 
