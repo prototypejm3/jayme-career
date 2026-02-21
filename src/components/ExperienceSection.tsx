@@ -86,7 +86,7 @@ const ExperienceSection = () => {
   return (
     <AnimatedSection className="px-6 py-28 max-w-4xl mx-auto">
       <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-3">
-        Experience
+        Talent Acquisition Experience
       </p>
       <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
         Where I've worked
