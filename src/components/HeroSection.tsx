@@ -4,7 +4,7 @@ import jaymePhoto from "@/assets/jayme-photo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden pt-14">
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-4xl w-full relative z-10 flex flex-col-reverse md:flex-row items-center gap-12">
@@ -80,7 +80,7 @@ const HeroSection = () => {
           <ArrowDown size={20} className="text-muted-foreground" />
         </motion.div>
       </motion.div>
-    </section>
+    </div>
   );
 };
 
