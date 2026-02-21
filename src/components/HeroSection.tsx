@@ -21,19 +21,16 @@ const HeroSection = () => {
           <p className="text-muted-foreground font-body text-sm mb-6">NYC / SF</p>
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="text-muted-foreground text-lg sm:text-xl max-w-lg leading-relaxed mb-10 space-y-4"
+          className="text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed mb-10 space-y-3 font-body"
         >
-          <span className="block">Operator with 10+ years of experience building technical and executive teams across AI, product, engineering, and GTM.</span>
-          <span className="block">I began my career recruiting NLP engineers for the Siri team at Apple, then joined True Search as an early member of the Executive Search Technology practice, placing 50+ senior executives.</span>
-          <span className="block">I later joined Genies (a generative AI and 3D avatar technology company) as an early employee, leading technical recruiting and operations from Series A through Series C. I helped scale the company to ~200 employees and a $1B valuation, building foundational research, engineering, and product teams in close partnership with leadership.</span>
-          <span className="block">Today, at Riviera, I'm a founding member of the AI Practice, partnering with venture-backed and public companies on senior hires across data, AI, and engineering.</span>
-          <span className="block">I advise early-stage companies on hiring founding technical leaders and designing scalable, high-bar talent systems built to last.</span>
-          <span className="block">I'm especially energized by how AI and low-code tools are reshaping how we build, operate, and imagine what's possible.</span>
-        </motion.p>
+          <p>10+ years building technical and executive teams across AI, product, engineering, and GTM.</p>
+          <p>Apple (Siri) → True Search (50+ executive placements) → Genies (Series A–C, $1B valuation, ~200 employees) → Riviera Partners (founding AI Practice member).</p>
+          <p>I advise early-stage companies on hiring founding leaders and designing talent systems built to last.</p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
