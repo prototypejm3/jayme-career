@@ -27,10 +27,17 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed mb-10 space-y-3 font-body"
         >
-          <p>10+ years building technical and executive teams across AI, product, engineering, and GTM.</p>
-          <p>Apple (Siri) → True Search (50+ executive placements) → Genies (Series A–C, $1B valuation, ~200 employees) → Riviera Partners (founding AI Practice member).</p>
-          <p>I advise early-stage companies on hiring founding leaders and designing talent systems built to last.</p>
-        </motion.div>
+          <p><strong>Talent Leader | AI, Data & Technical Executive Hiring</strong></p>
+<p>
+10+ years building technical and executive teams across AI, product, engineering, and GTM.
+Hired thousands of engineers and placed 50+ senior executives.</p>
+<p> <strong>Snapshot:</strong><br>
+Apple (Siri) → True Search → Genies (Series A–C, ~$1B valuation, ~200 employees) → Riviera Partners (Founding Member, AI Practice)
+</p>
+<p> Supported companies from napkin-stage ideas to billion-dollar public businesses, including executive searches tied to the MAG7 ecosystem.</p>
+<p>
+Most passionate about partnering with early-stage founders to hire founding technical leaders and design talent systems that scale with the company — not against it.
+</p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
