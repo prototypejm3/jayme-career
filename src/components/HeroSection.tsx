@@ -16,7 +16,7 @@ const HeroSection = () => {
         >
           <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2">Jayme Karr</h1>
           <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-1">
-            Head of Talent
+            Director ~ Riviera Partners
           </p>
           <p className="text-muted-foreground font-body text-sm mb-6">NYC / SF</p>
         </motion.div>
