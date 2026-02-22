@@ -32,7 +32,7 @@ const companies = [
     subtitle: "Talent Architecture for Early-Stage Companies",
     sections: [
       { heading: "Focus", content: "Talent strategy + executive hiring for AI-native startups." },
-      { heading: "Worked With", content: "Edge Runner · Besty AI · Genies · Early-stage AI & vertical SaaS teams" },
+      { heading: "Worked With", content: "Edge Runner · Besty AI · TC Central, Genies · Early-stage stealth AI & vertical SaaS startups" },
       { heading: "What I Built", items: ["Hiring roadmaps", "Structured evaluation frameworks", "Leadership search execution", "Founder-level partnership"] },
     ],
     skills: "Org design · Executive evaluation · Founder partnership",
