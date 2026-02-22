@@ -6,7 +6,7 @@ import AnimatedSection from "./AnimatedSection";
 const philosophies = [
   {
     statement: "Recruiting is product.",
-    blurb: "Every hire is a feature shipped. The best talent teams think like product teams — iterating on process, measuring outcomes, and obsessing over the candidate experience.",
+    blurb: "Every hire is a feature shipped. The best talent teams think like product teams ~ iterating on process, measuring outcomes, and obsessing over the candidate experience.",
   },
   {
     statement: "Hiring is a systems problem.",
@@ -14,7 +14,7 @@ const philosophies = [
   },
   {
     statement: "Narrative drives candidate quality.",
-    blurb: "The best candidates aren't looking. They're pulled in by a compelling story — about the company, the team, and the impact they'll make. Storytelling is a recruiter's most underrated tool.",
+    blurb: "The best candidates aren't looking. They're pulled in by a compelling story ~ about the company, the team, and the impact they'll make. Storytelling is a recruiter's most underrated tool.",
   },
   {
     statement: "Calibration prevents bias.",

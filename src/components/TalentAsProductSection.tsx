@@ -124,7 +124,7 @@ const TalentAsProductSection = () => {
               <ul className="space-y-1.5 text-muted-foreground text-sm sm:text-base max-w-2xl list-disc list-inside mb-4">
                 <li>What are we scoring against?</li>
                 <li>What does "exceeds expectations at 12 months" look like?</li>
-                <li>What team gap are we solving — skill, ownership, domain, or velocity?</li>
+                <li>What team gap are we solving ~ skill, ownership, domain, or velocity?</li>
               </ul>
               <p className="text-muted-foreground text-sm sm:text-base mb-1">Hiring requires conviction.</p>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-4">
@@ -135,9 +135,9 @@ const TalentAsProductSection = () => {
               <p className="text-primary font-display text-sm font-semibold mb-3">When alignment is tight:</p>
               <ul className="space-y-1.5 text-muted-foreground text-sm sm:text-base max-w-2xl list-disc list-inside mb-3">
                 <li>~25% recruiter screen pass rate (protecting signal)</li>
-                <li>80–90% HM pass-through</li>
+                <li>80~90% HM pass-through</li>
                 <li>5 high-signal interview stages</li>
-                <li>14–20 day senior IC time-to-close</li>
+                <li>14~20 day senior IC time-to-close</li>
                 <li>85% offer acceptance for priority hires</li>
               </ul>
               <p className="text-foreground font-semibold text-sm sm:text-base">
@@ -173,7 +173,7 @@ const TalentAsProductSection = () => {
                 The offer is not the finish line.
               </p>
               <ul className="space-y-1.5 text-muted-foreground text-sm sm:text-base max-w-2xl list-disc list-inside mb-3">
-                <li>85–90% 12–24 month retention across senior ICs</li>
+                <li>85~90% 12~24 month retention across senior ICs</li>
                 <li>Regrettable attrition tracked among top performers</li>
                 <li>First performance cycle outcomes tied back to hiring criteria</li>
                 <li>30/60/90 day feedback loops built into the system</li>
@@ -250,7 +250,7 @@ const TalentAsProductSection = () => {
                 A company's trajectory is set by its first 50 hires.
               </p>
               <p className="font-display text-xl sm:text-2xl font-bold text-primary text-center">
-                After that, you are scaling a pattern — good or bad.
+                After that, you are scaling a pattern ~ good or bad.
               </p>
             </div>
           </motion.div>
