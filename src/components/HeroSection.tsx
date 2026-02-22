@@ -9,64 +9,66 @@ const HeroSection = () => {
 
       <div className="max-w-4xl w-full relative z-10 flex flex-col-reverse md:flex-row items-center gap-12">
         <div className="flex-1">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2">Jayme Karr</h1>
-          <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-1">
-            Director ~ Riviera Partners
-          </p>
-          <p className="text-muted-foreground font-body text-sm mb-6">NYC / SF</p>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2">Jayme Karr</h1>
+            <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-1">
+              Director ~ Riviera Partners
+            </p>
+            <p className="text-muted-foreground font-body text-sm mb-6">NYC / SF</p>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed mb-10 space-y-3 font-body"
-        >
-<p><strong>Talent Leader | AI, Data & Technical Executive Hiring</strong></p>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed mb-10 space-y-3 font-body"
+          >
+            <p><strong>Talent Leader | AI, Data & Technical Executive Hiring</strong></p>
 
-<p>
-10+ years building technical and executive teams across AI, product, engineering, and GTM. 
-Hired thousands of engineers and placed 50+ senior executives.
-</p>
+            <p>
+              10+ years building technical and executive teams across AI, product, engineering, and GTM.
+              Hired thousands of engineers and placed 50+ senior executives.
+            </p>
 
-<p>
-<strong>Snapshot:</strong><br>
-Apple (Siri) → True Search → Genies (Series A–C, ~$1B valuation, ~200 employees) → Riviera Partners (Founding Member, AI Practice)
-</p>
+            <p>
+              <strong>Snapshot:</strong><br />
+              Apple (Siri) → True Search → Genies (Series A~C, ~$1B valuation, ~200 employees) → Riviera Partners (Founding Member, AI Practice)
+            </p>
 
-<p>
-Supported companies from napkin-stage ideas to billion-dollar public businesses, including executive searches tied to the MAG7 ecosystem.
-</p>
+            <p>
+              Supported companies from napkin-stage ideas to billion-dollar public businesses, including executive searches tied to the MAG7 ecosystem.
+            </p>
 
-<p>
-Most passionate about partnering with early-stage founders to hire founding technical leaders and designing talent systems that scale with the company, not against it.
-</p>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="flex items-center gap-5"
-        >
+            <p>
+              Most passionate about partnering with early-stage founders to hire founding technical leaders and designing talent systems that scale with the company, not against it.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-center gap-5"
+          >
             {[
               { icon: Linkedin, href: "https://www.linkedin.com/in/jaymelyn/", label: "LinkedIn" },
               { icon: Github, href: "https://github.com/prototypejm3/prototypejm3", label: "GitHub" },
               { icon: Mail, href: "mailto:Jaymel.karr@gmail.com", label: "Email" },
-          ].map(({ icon: Icon, href, label }) => (
-            <a
-              key={label}
-              href={href}
-              aria-label={label}
-              className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300"
-            >
-              <Icon size={18} />
-            </a>
-          ))}
-        </motion.div>
+            ].map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </motion.div>
         </div>
 
         <motion.div
