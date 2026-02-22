@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 interface Tab {
   id: string;
@@ -21,8 +21,12 @@ const Navbar = ({ tabs, activeTab, onTabChange }: NavbarProps) => {
     setMobileOpen(false);
   };
 
+  const handleDownloadPDF = () => {
+    window.print();
+  };
+
   return (
-    <nav className="shrink-0 bg-background border-b border-border">
+    <nav className="shrink-0 bg-background border-b border-border print:hidden">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-14">
         <button
           onClick={() => handleClick("about")}
@@ -53,6 +57,14 @@ const Navbar = ({ tabs, activeTab, onTabChange }: NavbarProps) => {
               )}
             </button>
           ))}
+          <button
+            onClick={handleDownloadPDF}
+            className="ml-2 text-sm font-display px-3 py-1.5 rounded text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+            aria-label="Download as PDF"
+          >
+            <Download size={14} />
+            PDF
+          </button>
         </div>
 
         {/* Mobile toggle */}
@@ -88,6 +100,13 @@ const Navbar = ({ tabs, activeTab, onTabChange }: NavbarProps) => {
                   {tab.label}
                 </button>
               ))}
+              <button
+                onClick={handleDownloadPDF}
+                className="text-sm font-display text-muted-foreground hover:text-foreground transition-colors text-left flex items-center gap-1.5"
+              >
+                <Download size={14} />
+                Download PDF
+              </button>
             </div>
           </motion.div>
         )}
