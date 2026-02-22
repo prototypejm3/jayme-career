@@ -5,20 +5,24 @@ import AnimatedSection from "./AnimatedSection";
 
 const stages = [
   {
-    statement: "0 → 1 founding teams",
-    blurb: "Identifying the first 10–20 hires that define a company's DNA. These roles require founders-level conviction and candidates who thrive in ambiguity.",
+    statement: "0 → 1 Founding Teams",
+    blurb: "Identifying and closing the first 10–20 hires who define product velocity, technical direction, and cultural DNA. These roles require founder-level conviction and candidates who thrive in ambiguity.",
   },
   {
-    statement: "10 → 100 scaling phase",
-    blurb: "Building repeatable hiring processes, standing up interview loops, and creating the infrastructure needed to grow without losing quality or culture.",
+    statement: "10 → 100 Scaling Phase",
+    blurb: "Building repeatable hiring infrastructure — structured interview loops, calibrated scorecards, executive alignment, and recruiting analytics — to scale without diluting quality or bar.",
   },
   {
-    statement: "PE-backed vertical SaaS expansion",
-    blurb: "Partnering with portfolio leadership to rapidly staff GTM, product, and engineering teams across multiple acquisitions and business units.",
+    statement: "Pre-IPO & Public Company Leadership",
+    blurb: "Partnering on VP, SVP, and C-level searches across AI, Data, Engineering, and Product. Experienced in navigating board dynamics, compensation structuring, executive referencing, and stakeholder alignment in high-visibility environments.",
   },
   {
-    statement: "Multi-team global recruiting orgs",
-    blurb: "Designing and leading distributed talent functions that operate across time zones, markets, and hiring cultures — with consistent standards.",
+    statement: "PE-Backed Vertical SaaS Expansion",
+    blurb: "Supporting portfolio companies through aggressive growth and acquisition cycles — staffing GTM, Product, and Engineering across business units while maintaining consistent talent standards.",
+  },
+  {
+    statement: "Multi-Team, Global Recruiting Orgs",
+    blurb: "Designing and leading distributed talent functions operating across time zones and markets, with unified bar-raising processes and executive partnership embedded at the core.",
   },
 ];
 
@@ -33,10 +37,10 @@ const ScalingSection = () => {
       >
         <div>
           <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-1">
-            Growth Stages
+            Operating Range
           </p>
           <h2 className="font-display text-2xl sm:text-3xl font-bold">
-            Scaling Teams Across Growth Stages
+            Operating Range
           </h2>
         </div>
         <ChevronDown
