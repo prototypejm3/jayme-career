@@ -102,6 +102,12 @@
     overflow: visible !important;
   }
 
+  .print\:block > * {
+    height: auto !important;
+    overflow: visible !important;
+    min-height: 0 !important;
+  }
+
   .print\:hidden {
     display: none !important;
   }
