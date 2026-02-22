@@ -10,6 +10,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ReferencesSection from "@/components/ReferencesSection";
 import ContactSection from "@/components/ContactSection";
+import GivingBackSection from "@/components/GivingBackSection";
 import { AnimatePresence, motion } from "framer-motion";
 
 const tabs = [
@@ -31,6 +32,7 @@ const Index = () => {
         return (
           <div className="overflow-y-auto h-full">
             <HeroSection />
+            <GivingBackSection />
             <ContactSection />
           </div>
         );
@@ -78,6 +80,7 @@ const Index = () => {
         <CompaniesSection />
         <ExperienceSection />
         <ReferencesSection />
+        <GivingBackSection />
         <ContactSection />
       </div>
 
