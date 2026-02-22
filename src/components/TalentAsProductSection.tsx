@@ -58,7 +58,7 @@ const TalentAsProductSection = () => {
             {/* 1. Roadmap Before Reqs */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                1. Roadmap Before Reqs
+                Roadmap Before Reqs
               </h3>
               <p className="text-primary font-display text-sm font-semibold mb-3">
                 Every role must unlock a priority.
@@ -79,7 +79,7 @@ const TalentAsProductSection = () => {
             {/* 2. Talent Is Capital Allocation */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                2. Talent Is Capital Allocation
+                Talent Is Capital Allocation
               </h3>
               <p className="text-muted-foreground text-sm sm:text-base max-w-2xl mb-6">
                 Compensation is not a reward system. It is <span className="text-foreground font-semibold">capital strategy</span>.
@@ -115,7 +115,7 @@ const TalentAsProductSection = () => {
             {/* 3. Alignment Before Sourcing */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                3. Alignment Before Sourcing
+                Alignment Before Sourcing
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 Misalignment is the costliest hiring mistake.
@@ -148,7 +148,7 @@ const TalentAsProductSection = () => {
             {/* 4. AI & Research Require Domain Rigor */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                4. AI & Research Require Domain Rigor
+                AI & Research Require Domain Rigor
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 AI hiring cannot be templated.
@@ -167,7 +167,7 @@ const TalentAsProductSection = () => {
             {/* 5. Quality Is Measured Post-Hire */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                5. Quality Is Measured Post-Hire
+                Quality Is Measured Post-Hire
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 The offer is not the finish line.
@@ -187,7 +187,7 @@ const TalentAsProductSection = () => {
             {/* 6. Hiring Is Shared Ownership */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                6. Hiring Is Shared Ownership
+                Hiring Is Shared Ownership
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 Talent does not "own" hiring alone.
@@ -207,7 +207,7 @@ const TalentAsProductSection = () => {
             {/* 7. Diversity Is Engineered Early */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                7. Diversity Is Engineered Early
+                Diversity Is Engineered Early
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 Diversity compounds. So does homogeneity.
@@ -228,7 +228,7 @@ const TalentAsProductSection = () => {
             {/* 8. Talent Shapes Brand */}
             <div className="mb-12">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-3">
-                8. Talent Shapes Brand
+                Talent Shapes Brand
               </h3>
               <p className="text-foreground font-semibold text-sm sm:text-base mb-3">
                 Talent Acquisition is the first lens through which the market experiences a company.
