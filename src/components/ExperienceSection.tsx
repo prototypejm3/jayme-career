@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 interface ReviewNote {
@@ -156,31 +157,40 @@ const ExperienceSection = () => {
                 isActive ? "border-primary/30 bg-card" : "border-border hover:border-primary/20"
               }`}
             >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-5 sm:p-6 gap-2">
-                <div>
-                   <h3 className="font-display font-semibold text-lg">{exp.role}</h3>
-                  <p className="text-primary text-sm">{exp.company}</p>
-                  {exp.highlights && exp.highlights.length > 0 && (
-                    <p className="text-muted-foreground text-xs font-body mt-0.5">
-                      <span className="font-medium">Clients:</span> {exp.highlights.join(" · ")}
-                    </p>
-                  )}
-                  {exp.teamSize && (
-                    <p className="text-muted-foreground/70 text-[11px] font-body mt-0.5">
-                      {exp.teamSize}
-                    </p>
-                  )}
-                </div>
-                <div className="text-right shrink-0">
-                  <span className="text-muted-foreground text-sm font-body block">
-                    {exp.period}
-                  </span>
-                  {exp.location && (
-                    <span className="text-muted-foreground/60 text-xs font-body">
-                      {exp.location}
+              <div className="flex items-center justify-between p-5 sm:p-6 gap-2">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 flex-1 min-w-0">
+                  <div>
+                     <h3 className="font-display font-semibold text-lg">{exp.role}</h3>
+                    <p className="text-primary text-sm">{exp.company}</p>
+                    {exp.highlights && exp.highlights.length > 0 && (
+                      <p className="text-muted-foreground text-xs font-body mt-0.5">
+                        <span className="font-medium">Clients:</span> {exp.highlights.join(" · ")}
+                      </p>
+                    )}
+                    {exp.teamSize && (
+                      <p className="text-muted-foreground/70 text-[11px] font-body mt-0.5">
+                        {exp.teamSize}
+                      </p>
+                    )}
+                  </div>
+                  <div className="text-right shrink-0 sm:ml-auto">
+                    <span className="text-muted-foreground text-sm font-body block">
+                      {exp.period}
                     </span>
-                  )}
+                    {exp.location && (
+                      <span className="text-muted-foreground/60 text-xs font-body">
+                        {exp.location}
+                      </span>
+                    )}
+                  </div>
                 </div>
+                <motion.div
+                  animate={{ rotate: isActive ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="shrink-0 ml-2"
+                >
+                  <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                </motion.div>
               </div>
 
               <AnimatePresence>
