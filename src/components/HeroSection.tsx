@@ -34,18 +34,14 @@ const HeroSection = () => {
               Hired thousands of engineers and placed 50+ senior executives.
             </p>
 
-            <p>
-              <strong>Snapshot:</strong><br />
-              Apple (Siri) → True Search → Genies (Series A~C, ~$1B valuation, ~200 employees) → Riviera Partners (Founding Member, AI Practice)
-            </p>
-
-            <p>
-              Supported companies from napkin-stage ideas to billion-dollar public businesses, including executive searches tied to the MAG7 ecosystem.
-            </p>
-
-            <p>
-              Most passionate about partnering with early-stage founders to hire founding technical leaders and designing talent systems that scale with the company, not against it.
-            </p>
+            <p><strong>Career Snapshot:</strong></p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Operations leader at The Ritz-Carlton Hotel Company, leading teams of 100+.</li>
+              <li>Transitioned into technical recruiting at Apple, hiring NLP engineers for the Siri team.</li>
+              <li>Early member of the Executive Search Technology Practice at True Search.</li>
+              <li>Joined Genies through Series A → C, scaling to ~200 employees and ~$1B valuation.</li>
+              <li>Founding member of the AI Practice at Riviera Partners, partnering with venture-backed and public companies on Data, AI, Research, and technical hires.</li>
+            </ul>
           </motion.div>
 
           <motion.div
