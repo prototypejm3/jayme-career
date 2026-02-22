@@ -27,7 +27,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed mb-10 space-y-3 font-body"
           >
-            <p><strong>Talent Leader | Focus on Eng, AI, Data, GTM & Technical Executive Hiring</strong></p>
+            <p><strong>Talent Leader | AI, Data & Technical Executive Hiring</strong></p>
 
             <p>
               10+ years building technical and executive teams across AI, product, engineering, and GTM.
