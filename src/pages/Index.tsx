@@ -39,9 +39,6 @@ const Index = () => {
           <div className="overflow-y-auto h-full">
             <TalentAsProductSection />
             <PhilosophySection />
-            <ScalingSection />
-            <TalentArchitectureSection />
-            <SkillsSection />
           </div>
         );
       case "projects":
@@ -50,6 +47,9 @@ const Index = () => {
         return (
           <div className="overflow-y-auto h-full">
             <ExperienceSection />
+            <ScalingSection />
+            <SkillsSection />
+            <TalentArchitectureSection />
           </div>
         );
       case "vouches":
