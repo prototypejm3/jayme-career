@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import PhilosophySection from "@/components/PhilosophySection";
 import ScalingSection from "@/components/ScalingSection";
 import TalentArchitectureSection from "@/components/TalentArchitectureSection";
+import TalentAsProductSection from "@/components/TalentAsProductSection";
 import CompaniesSection from "@/components/CompaniesSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -36,6 +37,7 @@ const Index = () => {
       case "expertise":
         return (
           <div className="overflow-y-auto h-full">
+            <TalentAsProductSection />
             <PhilosophySection />
             <ScalingSection />
             <TalentArchitectureSection />
@@ -68,6 +70,7 @@ const Index = () => {
       {/* Print-only: render all sections */}
       <div className="hidden print:block print:overflow-visible">
         <HeroSection />
+        <TalentAsProductSection />
         <PhilosophySection />
         <ScalingSection />
         <TalentArchitectureSection />
