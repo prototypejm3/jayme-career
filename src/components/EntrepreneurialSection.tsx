@@ -8,7 +8,7 @@ const ventures = [
     id: 1,
     name: "Destination by Hyatt",
     role: "Head of Operations & Corporate Event Manager",
-    period: "Mar 2016 — Dec 2016",
+    period: "Mar 2016 ~ Dec 2016",
     location: "Greater San Diego Area",
     description:
       "Responsible for payroll and scheduling for 75+ employees. Maintained relationships with vendors and entertainment agencies. Oversaw operations and helped grow revenues to the budget of 'Opening Day Party' $1MM+. Saw a 30% increase in all outlet satisfaction scores tracked via social media. Rated amongst the Top Resorts in the world by Condé Nast.",
@@ -18,10 +18,10 @@ const ventures = [
     id: 2,
     name: "The Ritz-Carlton Hotel Company",
     role: "Learning Coach & Operations Supervisor",
-    period: "Apr 2013 — Mar 2016",
+    period: "Apr 2013 ~ Mar 2016",
     location: "5 Star 5 Diamond · Dove Mountain",
     description:
-      "As the youngest person elected for this position: Assisted in Strategic Planning for 2014–2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
+      "As the youngest person elected for this position: Assisted in Strategic Planning for 2014~2016. Raised Gallup Scores from #12 in the company to #2. Reduced Beverage Cost from 23.5% to 17.9% & labor from 13% to 9.5%. Key contributor for training employees to meet Forbes Five Star and AAA Five Diamond Standards. Received 90%+ employee engagement within 3 departments for 2 consecutive years. Five Star Employee of the Quarter multiple times.",
     highlights: ["Forbes 5-Star", "AAA 5-Diamond", "Gallup #2"],
   },
   {

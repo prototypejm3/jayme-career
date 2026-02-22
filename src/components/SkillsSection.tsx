@@ -51,7 +51,7 @@ const SkillsSection = () => (
       Core competencies
     </h2>
     <p className="text-muted-foreground text-sm font-body mb-2">
-      Ranked by former colleagues on a 1–5 scale
+      Ranked by former colleagues on a 1~5 scale
     </p>
     <div className="section-divider mb-10" />
 
@@ -59,7 +59,7 @@ const SkillsSection = () => (
     <div className="flex flex-wrap gap-x-6 gap-y-1 mb-10 text-xs text-muted-foreground font-body">
       {scaleLabels.map((s) => (
         <span key={s.value}>
-          <span className="font-semibold text-foreground">{s.value}</span> — {s.label}
+          <span className="font-semibold text-foreground">{s.value}</span> ~ {s.label}
         </span>
       ))}
     </div>

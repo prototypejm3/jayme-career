@@ -7,15 +7,15 @@ import { ChevronDown } from "lucide-react";
 const references = [
   {
     name: "Matthew Skiba",
-    title: "Performance Review Summary — Genies",
+    title: "Performance Review Summary ~ Genies",
     tag: "Performance Review",
-    quote: "Genies would not be the company it is without Jayme Karr. Not only is Jayme one of the highest performers I've ever worked with, her attitude and what she stands for is what we should look for in everyone we hire. Jayme is always thinking forward and observing what's around her — bringing ideas, insights and solutions to the table.",
+    quote: "Genies would not be the company it is without Jayme Karr. Not only is Jayme one of the highest performers I've ever worked with, her attitude and what she stands for is what we should look for in everyone we hire. Jayme is always thinking forward and observing what's around her ~ bringing ideas, insights and solutions to the table.",
   },
   {
     name: "Matthew Skiba",
-    title: "Performance Review Summary — Genies",
+    title: "Performance Review Summary ~ Genies",
     tag: "Performance Review",
-    quote: "Played a key role in rebooting the engineering recruiting process. Closed 5 headcount. Took ownership of the R&D hiring pipeline — Machine Learning/AI & Technical Artists. Offer Acceptance Rate: 85%. 34% of all candidates that reached onsite identified as female. 85% identified as a member of the global majority.",
+    quote: "Played a key role in rebooting the engineering recruiting process. Closed 5 headcount. Took ownership of the R&D hiring pipeline ~ Machine Learning/AI & Technical Artists. Offer Acceptance Rate: 85%. 34% of all candidates that reached onsite identified as female. 85% identified as a member of the global majority.",
   },
   {
     name: "Da Li",
@@ -33,7 +33,7 @@ const references = [
     name: "Ethan He",
     title: "Video Generation @ xAI Grok Imagine (prev Nvidia, Meta)",
     quote:
-      "Jayme displayed an admirable dedication to ensuring I was well-informed and supported. Her proactive approach—preemptively reaching out to finance for competitive offers—demonstrated her foresight and genuine care for a smooth hiring experience.",
+      "Jayme displayed an admirable dedication to ensuring I was well-informed and supported. Her proactive approach~preemptively reaching out to finance for competitive offers~demonstrated her foresight and genuine care for a smooth hiring experience.",
   },
   {
     name: "Alexander Schwertner",
@@ -45,7 +45,7 @@ const references = [
     name: "Laura Mae Brown",
     title: "COO & Head of Product, Santa Barbara Games (ex-Amazon, EA, Riot)",
     quote:
-      "Jayme creates relationships on a truly personal level. She was extremely respectful of my time—finding the right matches, not just any matches—and getting me set up for success. I cannot recommend her enough.",
+      "Jayme creates relationships on a truly personal level. She was extremely respectful of my time~finding the right matches, not just any matches~and getting me set up for success. I cannot recommend her enough.",
   },
   {
     name: "Luxi (Lucy) Huang, CFA",
@@ -63,7 +63,7 @@ const references = [
     name: "Eyal Yanai",
     title: "CEO, Bond",
     quote:
-      "Jayme is an outstanding executive recruiter—professional, astute, transparent, empathetic and a great communicator. She was very quick to accurately understand my background and always made me feel she has my best interests at heart.",
+      "Jayme is an outstanding executive recruiter~professional, astute, transparent, empathetic and a great communicator. She was very quick to accurately understand my background and always made me feel she has my best interests at heart.",
   },
   {
     name: "Daniel Eberhard",
@@ -75,7 +75,7 @@ const references = [
     name: "Josh Platt",
     title: "SVP Product, AI & UX, Rue Gilt Groupe",
     quote:
-      "She was knowledgeable about her client's needs and thorough in helping me navigate the recruiting process. Always open and transparent—I would highly recommend her for retained search in product and technology.",
+      "She was knowledgeable about her client's needs and thorough in helping me navigate the recruiting process. Always open and transparent~I would highly recommend her for retained search in product and technology.",
   },
   {
     name: "Abe McCallum",
@@ -93,13 +93,13 @@ const references = [
     name: "Vitor Agnello",
     title: "Senior Director of Product, QuintoAndar",
     quote:
-      "She demonstrated strong customer focus—always in touch, making sure I knew how things were evolving. Jayme earned my trust very quickly; I was confident she was representing my interests and trying to get the best for me.",
+      "She demonstrated strong customer focus~always in touch, making sure I knew how things were evolving. Jayme earned my trust very quickly; I was confident she was representing my interests and trying to get the best for me.",
   },
   {
     name: "Janey Wong",
     title: "Product Management, Multi-Industry",
     quote:
-      "Every step of the process Jayme has your interests at heart but also respects the needs of her corporate clients. She is a prompt and clear communicator—she clearly makes the effort to make you feel like a priority.",
+      "Every step of the process Jayme has your interests at heart but also respects the needs of her corporate clients. She is a prompt and clear communicator~she clearly makes the effort to make you feel like a priority.",
   },
   {
     name: "Michael Curtes",

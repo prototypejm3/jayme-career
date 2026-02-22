@@ -101,7 +101,7 @@ const CompaniesSection = () => (
       </div>
 
       <p className="text-center text-muted-foreground text-sm font-body mt-16 max-w-2xl mx-auto italic">
-        Across every project — talent, product, or brand — I focus on systems, clarity, and narrative.
+        Across every project ~ talent, product, or brand ~ I focus on systems, clarity, and narrative.
       </p>
     </div>
   </div>

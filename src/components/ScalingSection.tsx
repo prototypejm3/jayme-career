@@ -10,7 +10,7 @@ const stages = [
   },
   {
     statement: "10 → 100 Scaling Phase",
-    blurb: "Building repeatable hiring infrastructure — structured interview loops, calibrated scorecards, executive alignment, and recruiting analytics — to scale without diluting quality or bar.",
+    blurb: "Building repeatable hiring infrastructure ~ structured interview loops, calibrated scorecards, executive alignment, and recruiting analytics ~ to scale without diluting quality or bar.",
   },
   {
     statement: "Pre-IPO & Public Company Leadership",
@@ -18,7 +18,7 @@ const stages = [
   },
   {
     statement: "PE-Backed Vertical SaaS Expansion",
-    blurb: "Supporting portfolio companies through aggressive growth and acquisition cycles — staffing GTM, Product, and Engineering across business units while maintaining consistent talent standards.",
+    blurb: "Supporting portfolio companies through aggressive growth and acquisition cycles ~ staffing GTM, Product, and Engineering across business units while maintaining consistent talent standards.",
   },
   {
     statement: "Multi-Team, Global Recruiting Orgs",

@@ -6,7 +6,7 @@ import AnimatedSection from "./AnimatedSection";
 const capabilities = [
   {
     statement: "Executive search & leadership hiring",
-    blurb: "Sourcing, assessing, and closing VP+ and C-level talent for high-growth companies — from first conversation to signed offer.",
+    blurb: "Sourcing, assessing, and closing VP+ and C-level talent for high-growth companies ~ from first conversation to signed offer.",
   },
   {
     statement: "IC team buildouts and leveling",
@@ -22,7 +22,7 @@ const capabilities = [
   },
   {
     statement: "Employer brand & narrative positioning",
-    blurb: "Crafting the story that makes top candidates say yes — from job descriptions to pitch decks to how your team shows up in market.",
+    blurb: "Crafting the story that makes top candidates say yes ~ from job descriptions to pitch decks to how your team shows up in market.",
   },
   {
     statement: "Agency/vendor management",
