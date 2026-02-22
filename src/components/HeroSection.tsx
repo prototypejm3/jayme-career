@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail, Github } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, Github, GraduationCap } from "lucide-react";
 import jaymePhoto from "@/assets/jayme-photo.png";
 
 const HeroSection = () => {
@@ -57,6 +57,7 @@ const HeroSection = () => {
             {[
               { icon: Linkedin, href: "https://www.linkedin.com/in/jaymelyn/", label: "LinkedIn" },
               { icon: Github, href: "https://github.com/prototypejm3/prototypejm3", label: "GitHub" },
+              { icon: GraduationCap, href: "https://adplist.org/mentors/jayme-karr", label: "ADPList" },
               { icon: Mail, href: "mailto:Jaymel.karr@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
