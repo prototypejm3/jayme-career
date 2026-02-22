@@ -11,7 +11,7 @@ const companies = [
   },
   {
     title: "Alias",
-    subtitle: "Anonymous publishing platform grounded in cognitive therapy",
+    subtitle: "Ego-minimized community of 1000's of humans & growing",
     sections: [
       { heading: "Concept", content: "A platform for anonymous expression structured through guided prompts and cognitive frameworks." },
       { heading: "What I Built", items: ["Product concept", "UX flow design", "Prompt architecture", "Narrative systems"] },
