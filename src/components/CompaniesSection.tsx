@@ -20,6 +20,15 @@ const companies = [
     skills: "Product thinking · Behavioral design · UX systems",
   },
   {
+    title: "The Career Compass",
+    subtitle: "Interactive career diagnostic tool",
+    sections: [
+      { heading: "Concept", content: "An interactive, scenario-based career diagnostic that helps professionals identify role fit, company-stage alignment, and core motivational drivers." },
+      { heading: "What I Built", items: ["Archetype framework", "Scoring logic", "UX flow design", "Positioning strategy"] },
+    ],
+    skills: "Product design · Behavioral frameworks · Low-code development",
+  },
+  {
     title: "Supplemind",
     subtitle: "Personal supplement tracker",
     sections: [
