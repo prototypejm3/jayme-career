@@ -65,7 +65,21 @@ const Index = () => {
     <main className="h-screen flex flex-col bg-background overflow-hidden">
       <Navbar tabs={tabs} activeTab={activeTab} onTabChange={(id) => setActiveTab(id as TabId)} />
 
-      <div className="flex-1 overflow-hidden">
+      {/* Print-only: render all sections */}
+      <div className="hidden print:block print:overflow-visible">
+        <HeroSection />
+        <PhilosophySection />
+        <ScalingSection />
+        <TalentArchitectureSection />
+        <SkillsSection />
+        <CompaniesSection />
+        <ExperienceSection />
+        <ReferencesSection />
+        <ContactSection />
+      </div>
+
+      {/* Screen: tab-based content */}
+      <div className="flex-1 overflow-hidden print:hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
