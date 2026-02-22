@@ -84,6 +84,10 @@
     color-adjust: exact !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
   }
 
   body, html {
@@ -95,17 +99,12 @@
     height: auto !important;
     overflow: visible !important;
     display: block !important;
+    flex-direction: column !important;
   }
 
   .print\:block {
     display: block !important;
     overflow: visible !important;
-  }
-
-  .print\:block > * {
-    height: auto !important;
-    overflow: visible !important;
-    min-height: 0 !important;
   }
 
   .print\:hidden {
