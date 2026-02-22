@@ -15,8 +15,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const tabs = [
   { id: "about", label: "Greetings" },
   { id: "expertise", label: "Talent Architecture" },
-  { id: "projects", label: "Independent Builds" },
   { id: "experience", label: "Operating History" },
+  { id: "projects", label: "Independent Builds" },
   { id: "vouches", label: "What Others Say" },
 ] as const;
 
