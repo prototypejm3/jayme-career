@@ -1,8 +1,9 @@
 import { Quote } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const references = [
   {
@@ -119,6 +120,20 @@ const INITIAL_COUNT = 6;
 
 const ReferencesSection = () => {
   const [showAll, setShowAll] = useState(false);
+  const [submittedReviews, setSubmittedReviews] = useState<
+    { reviewer_name: string; reviewer_title: string | null; reviewer_company: string | null; relationship: string | null; review_text: string }[]
+  >([]);
+
+  useEffect(() => {
+    supabase
+      .from("reviews")
+      .select("reviewer_name, reviewer_title, reviewer_company, relationship, review_text")
+      .order("created_at", { ascending: true })
+      .then(({ data }) => {
+        if (data) setSubmittedReviews(data);
+      });
+  }, []);
+
   const visible = showAll ? references : references.slice(0, INITIAL_COUNT);
 
   return (
@@ -134,7 +149,7 @@ const ReferencesSection = () => {
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
         {visible.map((ref, i) => (
           <motion.div
-            key={ref.name}
+            key={`static-${ref.name}-${i}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -157,6 +172,38 @@ const ReferencesSection = () => {
               {ref.tag && (
                 <span className="inline-block mt-1.5 text-[10px] font-display px-2 py-0.5 rounded-full bg-primary/10 text-primary">
                   {ref.tag}
+                </span>
+              )}
+            </div>
+          </motion.div>
+        ))}
+
+        {/* Submitted reviews from the database */}
+        {submittedReviews.map((review, i) => (
+          <motion.div
+            key={`submitted-${i}`}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+              delay: i * 0.05,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="break-inside-avoid rounded-lg border border-border p-6 hover:border-primary/20 transition-colors duration-300"
+          >
+            <Quote size={18} className="text-primary/40 mb-3" />
+            <p className="text-secondary-foreground text-sm leading-relaxed mb-4 italic">
+              "{review.review_text}"
+            </p>
+            <div>
+              <p className="font-display font-semibold text-sm">{review.reviewer_name}</p>
+              <p className="text-muted-foreground text-xs leading-snug">
+                {[review.reviewer_title, review.reviewer_company].filter(Boolean).join(", ")}
+              </p>
+              {review.relationship && (
+                <span className="inline-block mt-1.5 text-[10px] font-display px-2 py-0.5 rounded-full bg-primary/10 text-primary">
+                  {review.relationship}
                 </span>
               )}
             </div>
