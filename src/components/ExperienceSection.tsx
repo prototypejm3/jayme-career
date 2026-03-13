@@ -33,7 +33,7 @@ const experiences = [
       description: "Drove search excellence, sales efficiency, and overall practice performance across AI mandates. Increased market visibility through targeted outreach, thought leadership, and conference presence. Proactively built relationships with top AI executives, researchers, and technical operators. Strengthened pipeline quality across frontier AI, applied ML, and infrastructure leaders.",
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
-    highlights: ["Microsoft", "Etsy", "Banyan Software", "Together AI", "Scale AI"],
+    highlights: ["Microsoft", "Etsy", "Banyan Software", "Uber"],
     teamSize: "Team of 2",
     stakeholders: ["Kyle Langworthy (Manager)", "Matt Skiba", "Bobby Gormsen", "Alix Woodriff", "Corinne Murberry", "Will Potter"],
     reviews: [] as ReviewNote[],
