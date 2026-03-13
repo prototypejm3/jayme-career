@@ -10,16 +10,6 @@ const companies = [
     skills: "Brand architecture · GTM narrative · Consumer positioning",
   },
   {
-    title: "Alias",
-    subtitle: "Ego-minimized community of 1000's of humans & growing",
-    sections: [
-      { heading: "Concept", content: "A platform for anonymous expression structured through guided prompts and cognitive frameworks." },
-      { heading: "What I Built", items: ["Product concept", "UX flow design", "Prompt architecture", "Narrative systems"] },
-      { heading: "Explores", items: ["Identity & narrative psychology", "Structured reflection", "Ego-minimized community"] },
-    ],
-    skills: "Product thinking · Behavioral design · UX systems",
-  },
-  {
     title: "The Alignment Compass",
     subtitle: "Interactive career diagnostic tool",
     link: "https://career-compass-prototypejm3.replit.app",
@@ -28,6 +18,16 @@ const companies = [
       { heading: "What I Built", items: ["Archetype framework", "Scoring logic", "UX flow design", "Positioning strategy"] },
     ],
     skills: "Product design · Behavioral frameworks · Low-code development",
+  },
+  {
+    title: "Alias",
+    subtitle: "Ego-minimized community of 1000's of humans & growing",
+    sections: [
+      { heading: "Concept", content: "A platform for anonymous expression structured through guided prompts and cognitive frameworks." },
+      { heading: "What I Built", items: ["Product concept", "UX flow design", "Prompt architecture", "Narrative systems"] },
+      { heading: "Explores", items: ["Identity & narrative psychology", "Structured reflection", "Ego-minimized community"] },
+    ],
+    skills: "Product thinking · Behavioral design · UX systems",
   },
   {
     title: "Supplemind",
