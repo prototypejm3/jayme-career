@@ -25,7 +25,7 @@ const experiences = [
     company: "Riviera Partners",
     period: "Jun 2025 ~ Present",
     location: "New York City",
-    description: "Founding member of the firm's AI Practice. Lead executive searches across AI, Data, and Research. Partner on CAIO, VP of Data, and VP of AI mandates. Build leadership layers beneath them — strategic ICs across research, modeling, applied AI, and infrastructure. Support both pre-modeling (data strategy, experimentation, research) and post-modeling (deployment, MLOps, infra, scaling) functions. Partner with companies from seed-stage founder/researcher hires to VP/Fellow-level roles at public companies. Build AI leadership teams end-to-end — from CAIO/VP to strategic IC layers across research and infrastructure.",
+    description: "Founding member of the firm's AI Practice. Lead executive searches across AI, Data, and Research. Partner on CAIO, VP of Data, and VP of AI mandates. Build leadership layers beneath them — strategic ICs across research, modeling, applied AI, and infrastructure. Support both pre-modeling (data strategy, experimentation, research) and post-modeling (deployment, MLOps, infra, scaling) functions. Partner with companies from seed-stage founder/researcher hires to VP/Fellow-level roles at public companies. Build AI leadership teams end-to-end — from CAIO/VP to strategic IC layers across research and infrastructure.\n\n14–20 day IC time-to-close · 85%+ offer acceptance for priority hires · 85%+ 24+ month retention across senior ICs\n\nA company's trajectory is set by its first 20 hires.",
     previousRole: {
       title: "Growth Lead – AI Practice",
       period: "Jan 2025 ~ Jun 2025",
@@ -33,7 +33,7 @@ const experiences = [
       description: "Drove search excellence, sales efficiency, and overall practice performance across AI mandates. Increased market visibility through targeted outreach, thought leadership, and conference presence. Proactively built relationships with top AI executives, researchers, and technical operators. Strengthened pipeline quality across frontier AI, applied ML, and infrastructure leaders.",
     },
     tech: ["AI/ML Recruiting", "Data & Research", "Executive Search"],
-    highlights: ["Microsoft", "Etsy", "Banyan Software", "Together AI", "Scale AI"],
+    highlights: ["Microsoft", "Etsy", "Banyan Software", "Uber"],
     teamSize: "Team of 2",
     stakeholders: ["Kyle Langworthy (Manager)", "Matt Skiba", "Bobby Gormsen", "Alix Woodriff", "Corinne Murberry", "Will Potter"],
     reviews: [] as ReviewNote[],
