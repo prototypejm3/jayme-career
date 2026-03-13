@@ -12,7 +12,7 @@ const companies = [
   {
     title: "The Alignment Compass",
     subtitle: "Interactive career diagnostic tool",
-    link: "https://career-compass-prototypejm3.replit.app",
+    link: "https://alignmentcompass.org",
     sections: [
       { heading: "Concept", content: "An interactive, scenario-based career diagnostic that helps professionals identify role fit, company-stage alignment, and core motivational drivers." },
       { heading: "What I Built", items: ["Archetype framework", "Scoring logic", "UX flow design", "Positioning strategy"] },
